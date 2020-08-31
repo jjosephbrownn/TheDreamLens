@@ -1,0 +1,386 @@
+.stupidDiv
+{
+  height: 10%;
+  width:50%;
+  text-align: center;
+  font-family: "centaur";
+  font-weight: bold;
+  font-size: 30px;
+  z-index: 1;
+}
+
+.loading
+{
+  display: block;
+  position:fixed;
+  z-index: 1000;
+  font-family: "centaur";
+  line-height: 1.6;
+  top: 20%;
+  left: 15%;
+  height: 100%;
+  width: 70%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color:#696969;
+}
+
+.loaded
+{
+  display: none;
+}
+
+.caption
+{
+  width:50%;
+  position: absolute;
+  text-align: center;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.siteInput
+{
+  width:20%;
+  text-align:center;
+  font-family: "centaur";
+  font-size: 20px;
+  border: 3px solid #2F4F4F;
+  border-radius: 5px;
+  outline: none;
+  background-color: #FFEBCD;
+
+}
+
+.siteBut
+{
+  width: 10%;
+  text-align:center;
+  font-family: "centaur";
+  font-size: 20px;
+  background-color:#FFEBCD;
+  border: 2px solid #708090;
+  border-radius: 5px;
+}
+
+.textOff
+{
+  opacity: 0%;
+  z-index: -1;
+}
+
+.textOn
+{
+  opacity: 50%;
+  font-family: "Lucida Console";
+  line-height: 1.5;
+  text-align: center;
+  font-size: 15px;
+}
+
+.textOnly
+{
+  text-align: center;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 20px;
+ }
+
+.miscText
+{
+  text-align: left;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.pseudo
+{
+  text-align: left;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.miscLink
+{
+  text-decoration:underline dashed black;
+}
+
+.hovLink
+{
+  text-align: center;
+  font-family: centaur;
+  font-size: 20px;
+  font-weight: bold;
+  border: 3px solid black;
+  opacity:0%;
+  background-color:#A9A9A9;
+  padding:2px;
+}
+
+ .startText
+{
+  width: 70%;
+  height:10%;
+  text-align: center;
+  font-family: PfefferMediaeval;
+  line-height: 1.5;
+  font-size: 60px;
+  font-weight: bold;
+ }
+
+.startSub
+{
+  width: 70%;
+  height:10%;
+  text-align: center;
+  font-family: PfefferMediaeval;
+  line-height: 1.5;
+  font-size: 30px;
+ }
+
+ .textTyping
+{
+  text-align: left;
+  width: 66%;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "centaur";
+  font-size: 20px;
+ }
+
+.textTitle
+{
+  text-align: center;
+  width: 66%;
+  font-family: "centaur";
+  font-size: 40px;
+ }
+
+
+.text
+{
+  width: 66%;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "centaur";
+  font-size: 20px;
+ }
+
+.scrollTitles
+{
+  text-align: center;
+  font-family: "centaur"; 
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.list
+{
+  font-family: "centaur";
+  font-size: 20px;
+  text-align: center;
+  list-style: inside;
+  list-style-type: none;
+  font-weight: normal;
+}
+
+.modPar
+{
+  position:relative;
+  font-size: 20px;
+  text-align: center;
+  font-family: "centaur";
+  font-weight: bold;
+}
+
+.formIn
+{
+  width:50%;
+  margin-right:auto;
+  margin-left:auto;
+  border:none;
+  text-align:center;
+  background-color: none;
+}
+
+.occ
+{
+  font-family: "centaur";
+  font-size: 20px;
+  text-align: center;
+  list-style: inside;
+  list-style-type: none;
+  font-weight: normal;
+
+}
+
+.ins
+{
+  width: 40%;
+  right: 10%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #8FBC8F;
+  font-family: "centaur";
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+}
+
+.butt
+{
+  width: auto;
+  left: 10%;
+  margin-right: 5px;
+  background-color: #556B2F;
+  border-radius: 5px;
+  border: none;
+  font-family: "centaur";
+  font-size: 15px;
+}
+
+.hidden
+{
+	opacity: 0%;
+}
+
+
+.shown
+{
+  width:500px;
+	opacity: 100%; 
+  font-family: "centaur";
+  font-size: 30px;
+  font-weight: bold;
+  color:#8B0000;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  background-color: #778899;
+  margin: 15% auto;
+  padding: 20px;
+  border: 5px #191970;
+  border-style: double;
+  border-radius: 5px;
+  width: 80%; 
+}
+
+.floatingNav
+{ 
+  position:relative;
+  z-index: 1;
+  opacity: 0%;
+  width: 25%;
+  height: 25%;
+  border: 1px #191970;
+  border-style: dashed;
+  text-align: center;
+  background-color: #6495ED;
+  transition: opacity 0.5s;
+}
+
+
+.floatIns
+{
+  margin:0;
+  left: 50%;
+  top: 75%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width:75%;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #8FBC8F;
+  font-family: "centaur";
+  font-size: 15px;
+  font-weight: bold;
+  outline: none;
+}
+
+.floatbutt
+{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height:25%;
+  background-color: #556B2F;
+  border-radius: 5px;
+  border: none;
+  font-family: "centaur";
+  font-size: 15px;
+}
+
+.floatWords
+{
+  margin:0;
+  left: 50%;
+  top: 15%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 50%;
+  font-family: "centaur";
+  font-size: 18px;
+  text-align: center;
+}
+
+div#navOn:hover  {
+  opacity: 100%;
+}
+
+.info 
+{
+  z-index: 1;
+  font-family: "centaur";
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 7px;
+  width:5%;
+  height: 5%;
+  opacity: 50%;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: #6495ED;
+  transition: width 2s, opacity 2s;
+}
+
+div.info:hover
+{
+  width: 25%;
+  opacity: 100%;
+}
+
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
