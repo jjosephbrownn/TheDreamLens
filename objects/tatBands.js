@@ -1,67 +1,67 @@
 //add envelopes?
 
 let soundSamps = [ //array of sound recordings
-	"soundz/soundrecs/purpSamps/barge.mp3",
-	"soundz/soundrecs/purpSamps/bayleaves.mp3", 
-	"soundz/soundrecs/purpSamps/breadmachine.mp3",
-	"soundz/soundrecs/purpSamps/charcoal.mp3", 
-	"soundz/soundrecs/purpSamps/comb.mp3", 
-	"soundz/soundrecs/purpSamps/combwood.mp3", 
-	"soundz/soundrecs/purpSamps/cork.mp3", 
-	"soundz/soundrecs/purpSamps/crunchyleaves.mp3", 
-	"soundz/soundrecs/purpSamps/grinder.mp3", 
-	"soundz/soundrecs/purpSamps/grinder2.mp3",
-	"soundz/soundrecs/purpSamps/woodscrape.mp3"
+	"/soundz/soundrecs/purpSamps/barge.mp3",
+	"/soundz/soundrecs/purpSamps/bayleaves.mp3", 
+	"/soundz/soundrecs/purpSamps/breadmachine.mp3",
+	"/soundz/soundrecs/purpSamps/charcoal.mp3", 
+	"/soundz/soundrecs/purpSamps/comb.mp3", 
+	"/soundz/soundrecs/purpSamps/combwood.mp3", 
+	"/soundz/soundrecs/purpSamps/cork.mp3", 
+	"/soundz/soundrecs/purpSamps/crunchyleaves.mp3", 
+	"/soundz/soundrecs/purpSamps/grinder.mp3", 
+	"/soundz/soundrecs/purpSamps/grinder2.mp3",
+	"/soundz/soundrecs/purpSamps/woodscrape.mp3"
 ]
 
 let musicSamps = [
-	"soundz/soundrecs/purpSamps/ac1.mp3",
-	"soundz/soundrecs/purpSamps/ac2.mp3",
-	"soundz/soundrecs/purpSamps/ac3.mp3",
-	"soundz/soundrecs/purpSamps/archGuitar.mp3",
-	"soundz/soundrecs/purpSamps/archGuitar2.mp3",
-	"soundz/soundrecs/purpSamps/crinDrum.mp3",
-	"soundz/soundrecs/purpSamps/crinDrumDist.mp3",
-	"soundz/soundrecs/purpSamps/crinDrumSimp.mp3",
-	"soundz/soundrecs/purpSamps/crinDrumSimp.mp3",
-	"soundz/soundrecs/purpSamps/crinSamp.mp3",
-	"soundz/soundrecs/purpSamps/crinSynths.mp3",
-	"soundz/soundrecs/purpSamps/facGuitar.mp3",
-	"soundz/soundrecs/purpSamps/harm1.mp3",
-	"soundz/soundrecs/purpSamps/harm2.mp3",
-	"soundz/soundrecs/purpSamps/harm3.mp3",
-	"soundz/soundrecs/purpSamps/ikaDrum.mp3",
-	"soundz/soundrecs/purpSamps/ikaVoice.mp3",
-	"soundz/soundrecs/purpSamps/impSynth.mp3",
-	"soundz/soundrecs/purpSamps/lofiBeat.mp3",
-	"soundz/soundrecs/purpSamps/lofiguitar.mp3",
-	"soundz/soundrecs/purpSamps/lofiSynth.mp3",
-	"soundz/soundrecs/purpSamps/moldBeat.mp3",
-	"soundz/soundrecs/purpSamps/moldBeat2.mp3",
-	"soundz/soundrecs/purpSamps/moldBeat3.mp3",
-	"soundz/soundrecs/purpSamps/moldSynth.mp3",
-	"soundz/soundrecs/purpSamps/moldSynthBass.mp3",
-	"soundz/soundrecs/purpSamps/moldSynthBass2.mp3",
-	"soundz/soundrecs/purpSamps/sadGuitar.mp3",
-	"soundz/soundrecs/purpSamps/weirdBeat.mp3"
+	"/soundz/soundrecs/purpSamps/ac1.mp3",
+	"/soundz/soundrecs/purpSamps/ac2.mp3",
+	"/soundz/soundrecs/purpSamps/ac3.mp3",
+	"/soundz/soundrecs/purpSamps/archGuitar.mp3",
+	"/soundz/soundrecs/purpSamps/archGuitar2.mp3",
+	"/soundz/soundrecs/purpSamps/crinDrum.mp3",
+	"/soundz/soundrecs/purpSamps/crinDrumDist.mp3",
+	"/soundz/soundrecs/purpSamps/crinDrumSimp.mp3",
+	"/soundz/soundrecs/purpSamps/crinDrumSimp.mp3",
+	"/soundz/soundrecs/purpSamps/crinSamp.mp3",
+	"/soundz/soundrecs/purpSamps/crinSynths.mp3",
+	"/soundz/soundrecs/purpSamps/facGuitar.mp3",
+	"/soundz/soundrecs/purpSamps/harm1.mp3",
+	"/soundz/soundrecs/purpSamps/harm2.mp3",
+	"/soundz/soundrecs/purpSamps/harm3.mp3",
+	"/soundz/soundrecs/purpSamps/ikaDrum.mp3",
+	"/soundz/soundrecs/purpSamps/ikaVoice.mp3",
+	"/soundz/soundrecs/purpSamps/impSynth.mp3",
+	"/soundz/soundrecs/purpSamps/lofiBeat.mp3",
+	"/soundz/soundrecs/purpSamps/lofiguitar.mp3",
+	"/soundz/soundrecs/purpSamps/lofiSynth.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat2.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat3.mp3",
+	"/soundz/soundrecs/purpSamps/moldSynth.mp3",
+	"/soundz/soundrecs/purpSamps/moldSynthBass.mp3",
+	"/soundz/soundrecs/purpSamps/moldSynthBass2.mp3",
+	"/soundz/soundrecs/purpSamps/sadGuitar.mp3",
+	"/soundz/soundrecs/purpSamps/weirdBeat.mp3"
 ]
 
 let tatBands = [
-	"../../soundz/soundrecs/words/tatters/tat1.mp3",
-	"../../soundz/soundrecs/words/tatters/tat2.mp3",
-	"../../soundz/soundrecs/words/tatters/tat3.mp3",
-	"../../soundz/soundrecs/words/tatters/tat4.mp3",
-	"../../soundz/soundrecs/words/tatters/tat5.mp3",
-	"../../soundz/soundrecs/words/tatters/tat6.mp3"
+	"/soundz/soundrecs/words/tatters/tat1.mp3",
+	"/soundz/soundrecs/words/tatters/tat2.mp3",
+	"/soundz/soundrecs/words/tatters/tat3.mp3",
+	"/soundz/soundrecs/words/tatters/tat4.mp3",
+	"/soundz/soundrecs/words/tatters/tat5.mp3",
+	"/soundz/soundrecs/words/tatters/tat6.mp3"
 ]
 
 let songs = [
-	"../../soundz/soundrecs/songs/song1.mp3",
-	"../../soundz/soundrecs/songs/song2.mp3",
-	"../../soundz/soundrecs/songs/song3.mp3",
-	"../../soundz/soundrecs/songs/barleycorn.mp3",
-	"../../soundz/soundrecs/songs/silkie.mp3",
-	"../../soundz/soundrecs/songs/worm.mp3"
+	"/soundz/soundrecs/songs/song1.mp3",
+	"/soundz/soundrecs/songs/song2.mp3",
+	"/soundz/soundrecs/songs/song3.mp3",
+	"/soundz/soundrecs/songs/barleycorn.mp3",
+	"/soundz/soundrecs/songs/silkie.mp3",
+	"/soundz/soundrecs/songs/worm.mp3"
 ] //array of sung samples
 
 let band1,band2,band3,band4,band5,band6

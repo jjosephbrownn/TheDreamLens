@@ -11,10 +11,10 @@ function orgChord(plus,paramSrc){
 	let master
 
 	let drums = [
-	"../soundz/soundrecs/purpSamps/lofiBeat.mp3",
-	"../soundz/soundrecs/purpSamps/moldBeat.mp3",
-	"../soundz/soundrecs/purpSamps/moldBeat2.mp3",
-	"../soundz/soundrecs/purpSamps/moldBeat3.mp3"
+	"/soundz/soundrecs/purpSamps/lofiBeat.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat2.mp3",
+	"/soundz/soundrecs/purpSamps/moldBeat3.mp3"
 ]
 
 	let drum = loadSound(drums[round(random(drums.length-1))])

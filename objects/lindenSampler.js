@@ -3,12 +3,12 @@ function linden(loops,atk,dec){
   let initAtk = atk
   let initDec = dec
 
-  let s11 = loadSound("soundz/soundrecs/string1.mp3")//have string sample here
-  let s21 = loadSound("soundz/soundrecs/string1.mp3")
-  let s31 = loadSound("soundz/soundrecs/string1.mp3")
-  let s12 = loadSound("soundz/soundrecs/string1.mp3")
-  let s22 = loadSound("soundz/soundrecs/string1.mp3")
-  let s32 = loadSound("soundz/soundrecs/string1.mp3")
+  let s11 = loadSound("/soundz/soundrecs/string1.mp3")//have string sample here
+  let s21 = loadSound("/soundz/soundrecs/string1.mp3")
+  let s31 = loadSound("/soundz/soundrecs/string1.mp3")
+  let s12 = loadSound("/soundz/soundrecs/string1.mp3")
+  let s22 = loadSound("/soundz/soundrecs/string1.mp3")
+  let s32 = loadSound("/soundz/soundrecs/string1.mp3")
 
   let filt1pat = [],filt2pat = [],filt3pat = []
   let del1pat = [],del2pat = [],del3pat = []

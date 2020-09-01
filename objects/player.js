@@ -1,10 +1,10 @@
 let hovs = [
-	"../soundz/soundrecs/hovs/hov1.mp3",
-	"../soundz/soundrecs/hovs/hov2.mp3",
-	"../soundz/soundrecs/hovs/hov3.mp3",
-	"../soundz/soundrecs/hovs/hov4.mp3",
-	"../soundz/soundrecs/hovs/hov5.mp3",
-	"../soundz/soundrecs/hovs/hov6.mp3"
+	"/soundz/soundrecs/hovs/hov1.mp3",
+	"/soundz/soundrecs/hovs/hov2.mp3",
+	"/soundz/soundrecs/hovs/hov3.mp3",
+	"/soundz/soundrecs/hovs/hov4.mp3",
+	"/soundz/soundrecs/hovs/hov5.mp3",
+	"/soundz/soundrecs/hovs/hov6.mp3"
 ]
 
 

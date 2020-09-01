@@ -1,9 +1,9 @@
 
 let scatPoems = [//fiction, non sensical
-	"../soundz/soundrecs/words/scatter/scat1.mp3",
-	"../soundz/soundrecs/words/scatter/scat2.mp3",
-	"../soundz/soundrecs/words/scatter/scat3.mp3",
-	"../soundz/soundrecs/words/scatter/scat4.mp3"
+	"/soundz/soundrecs/words/scatter/scat1.mp3",
+	"/soundz/soundrecs/words/scatter/scat2.mp3",
+	"/soundz/soundrecs/words/scatter/scat3.mp3",
+	"/soundz/soundrecs/words/scatter/scat4.mp3"
 	]
 
 

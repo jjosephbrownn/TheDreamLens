@@ -16,12 +16,6 @@ let radFrac
 let dur1
 let randPos,loPos,hiPos
 
-// function preload(){
-// 	let picChoice = round(random(maps.length-1))
-// 	backMap = loadImage(maps[picChoice])
-// }
-
-
 function setup(){
 	cnv = createCanvas(windowWidth-20,windowHeight-20)
 	background(255)
