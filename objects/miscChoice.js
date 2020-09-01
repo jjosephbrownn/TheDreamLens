@@ -1,6 +1,6 @@
 let misc = [
-	"../../miscera/miscCom/intro.txt",
-	"../../miscera/miscCom/gather.txt"
+	"/commentary/intro.txt",
+	"/commentary/gather.txt"
 ]
 
 function commentary(){

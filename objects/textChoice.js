@@ -4,7 +4,6 @@ let scatCents = [
 	"../../words/scatCent3.txt",
 	"../../words/scatCent4.txt",
 	"../../words/scatCent5.txt",
-	"../../words/scatCent6.txt",
 	"../../words/scatCent7.txt",
 	"../../words/scatCent8.txt"
 ]

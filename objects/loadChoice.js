@@ -23,13 +23,16 @@ let cartoons = [
 	"/pics/cartoons/toon5.jpg",
 	"/pics/cartoons/toon6.jpg",
 	"/pics/cartoons/toon7.jpg",
-	"/pics/cartoons/toon8.jpg"
+	"/pics/cartoons/toon8.jpg",
+	"/pics/cartoons/toon9.jpg"
 ]
 
 let instructions = [ // ALSO PICS!
 	"/pics/instructions/inst1.jpg",
 	"/pics/instructions/inst2.jpg",
-	"/pics/instructions/inst3.jpg"
+	"/pics/instructions/inst3.jpg",
+	"/pics/instructions/inst4.jpg",
+	"/pics/instructions/inst5.jpg"
 ]
 
 let maps = [
