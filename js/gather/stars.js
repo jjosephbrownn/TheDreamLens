@@ -61,7 +61,6 @@ function preload(){
 	} else {
 		loadImg = loadImage(loadThing)
 	}
-	print(loadImg)
 	typ = loadFont("/fonts/PfefferMediaeval.otf")
 }
 
@@ -180,13 +179,11 @@ function mousePressed() {
 
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000) 
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }

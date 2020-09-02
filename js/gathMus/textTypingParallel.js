@@ -40,14 +40,14 @@ let key2State = false
 let key3State = false
 
 let circuits = [
-	"../pics/circuits/circ1.jpg",
-	"../pics/circuits/circ2.jpg",
-	"../pics/circuits/circ3.jpg",
-	"../pics/circuits/circ4.jpg",
-	"../pics/circuits/circ5.jpg",
-	"../pics/circuits/circ6.jpg",
-	"../pics/circuits/circ7.jpg",
-	"../pics/circuits/circ8.jpg",
+	"/pics/circuits/circ1.jpg",
+	"/pics/circuits/circ2.jpg",
+	"/pics/circuits/circ3.jpg",
+	"/pics/circuits/circ4.jpg",
+	"/pics/circuits/circ5.jpg",
+	"/pics/circuits/circ6.jpg",
+	"/pics/circuits/circ7.jpg",
+	"/pics/circuits/circ8.jpg",
 ]
 
 let loadImg
@@ -128,7 +128,6 @@ function setup(){
 		rand = round(random(12,24))
 		randKey1 = round(random(65,90))
 		randKey2 = round(random(65,90))
-		print(randKey1,randKey2)
 		tintTrig = round(random(1,12))
 
 		let titler = new headers()
@@ -171,9 +170,7 @@ window.addEventListener('keydown', function(e) {
 
 	let a = event.key
 	let b = event.keyCode
-	print(b)
 
-	print(b,randKey1,randKey2,structure)
 	keyCount++
 
 	if(b !== 13){
@@ -294,10 +291,8 @@ function fader(){
 	choir.counterpoint()
 	let r = Math.random()*width
 	let t = Math.random()*height
-	print(r,t)
 
 	alph = innerText.length
-	print(alph)
 	tint(255,alph)
 	image(backMap,r,t,200,200,r,t,200,200); 
 } 

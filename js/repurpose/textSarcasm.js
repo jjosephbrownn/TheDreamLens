@@ -25,14 +25,14 @@ let fillText = []
 let innerText
 
 let circuits = [
-	"../pics/circuits/circ1.jpg",
-	"../pics/circuits/circ2.jpg",
-	"../pics/circuits/circ3.jpg",
-	"../pics/circuits/circ4.jpg",
-	"../pics/circuits/circ5.jpg",
-	"../pics/circuits/circ6.jpg",
-	"../pics/circuits/circ7.jpg",
-	"../pics/circuits/circ8.jpg",
+	"/pics/circuits/circ1.jpg",
+	"/pics/circuits/circ2.jpg",
+	"/pics/circuits/circ3.jpg",
+	"/pics/circuits/circ4.jpg",
+	"/pics/circuits/circ5.jpg",
+	"/pics/circuits/circ6.jpg",
+	"/pics/circuits/circ7.jpg",
+	"/pics/circuits/circ8.jpg",
 ]
 
 let loadImg

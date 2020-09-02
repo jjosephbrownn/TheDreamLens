@@ -70,20 +70,19 @@ function preload(){
 	layerChoice = random([0,1,2])
 
 	if(loadStep === "scatter"){
-		loadImg.resize(0,height)
 		loadImg = loadImage(loadThing)
+		loadImg.resize(0,height)
 	} else if(loadStep === "cartography"){
-		loadImg.resize(0,height)
 		loadImg = loadImage(loadThing)
-	} else if (loadStep === "gather"){
 		loadImg.resize(0,height)
+	} else if (loadStep === "gather"){
 		loadText = loadStrings(loadThing)
 	} else if (loadStep === "repurpose"){
-		loadImg.resize(0,height)
 		loadImg = loadImage(loadThing)
+		loadImg.resize(0,height)
 	} else {
-		loadImg.resize(0,height)
 		loadImg = loadImage(loadThing)
+		loadImg.resize(0,height)
 	}
 	
 	if(loadStep !== "cartography"){
@@ -205,7 +204,6 @@ function mousePressed(){
 	place2 = round(map(place2,0,(width+height),0,dur2))
 
 	mouseCount++
-	console.log(mouseCount,mouseRand)
 
 	if(fracState === true){
 		if(mouseButton === LEFT){
@@ -221,14 +219,12 @@ function mousePressed(){
 				mouseRand = round(random(4,12))
 				mouseCount = 0
 				playState = true
-				console.log("fracON","playFALSE")
 			} else if(playState === true){
 				voice.fracBPM(0,0,1)
 				voice.fracBPM(1,0,1)
 				mouseRand = round(random(4,12))
 				mouseCount = 0
 				playState = false
-				console.log("fracON","playTRUE")
 			}
 		}
 		holeCount++
@@ -255,19 +251,16 @@ function mousePressed(){
 				mouseRand = round(random(4,12))
 				mouseCount = 0
 				playState = true
-				console.log("fracOFF","playFALSE")
 			} else if(playState === true){
 				voice.filt(0,random(1000,5000),random(5))
 				voice.filt(1,random(1000,5000),random(5))
 				mouseRand = round(random(4,12))
 				mouseCount = 0
 				playState = false
-				console.log("fracOFF","playTRUE")
 				overMel.begin()
 				melState = true
 				setTimeout(function(){
 					overMel.stop()
-					console.log("melStop")
 				},random(20000,120000))
 			}
 		}
@@ -279,7 +272,6 @@ function mousePressed(){
 
 function mouseReleased(){
 	mouseState = true;
-	console.log(holeCount,holeRand,smallHoleCount,smallHoleRand,fracState)
 	if(fracState === true){
 		voice.fracStop()
 	} else if(fracState === false){
@@ -307,13 +299,11 @@ function mouseReleased(){
 
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000) 
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }

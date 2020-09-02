@@ -86,8 +86,6 @@ function cueChange(){
 function mouseDragged(){
 	posX = constrain(mouseX,105,width-105)
 
-	print(mouseX,loPos,hiPos)
-
 	if(posX > loPos && posX < randPos){
 		let filtFreq = map(mouseX,loPos,randPos,0,10000)
 		radFrac.radFilt(filtFreq)

@@ -176,7 +176,6 @@ function mouseDragged(){
 
 function mouseWheel(event){
 	mouseCount++
-	console.log(mouseCount,rand,structure)
 	let r = round(random(5))
 	if(structure === 0){
 		strings.droneStop(0)

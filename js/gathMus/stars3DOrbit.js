@@ -239,7 +239,6 @@ function changer(){
 }
 
 function chorder(){
-    print(wonkState,drumState,tinkState)
     if(wonkState === true){
         clearInterval(chordSeq)
         drum.rate(0)
@@ -292,7 +291,6 @@ function chorder(){
         if(cPos2 === tenLen){
             cPos2 = 0
         }
-        print(cPos2)
     }
 
     if(tinkState === false){
@@ -304,7 +302,6 @@ function chorder(){
 function mouseWheel(event){
     let s = map(event.delta,-150,150,-0.05,0.05)
     scalar += s
-    print(scalar)
     return false
 }
 
@@ -323,7 +320,6 @@ function markov(){
 
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000) 

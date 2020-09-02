@@ -66,7 +66,7 @@ let wordBands = [
 	"/soundz/soundrecs/words/repurpose/purp2.mp3"
 ]
 
-let songs = [
+let songBands = [
 	"/soundz/soundrecs/songs/song1.mp3",
 	"/soundz/soundrecs/songs/song2.mp3",
 	"/soundz/soundrecs/songs/song3.mp3",

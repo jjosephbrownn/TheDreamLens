@@ -174,7 +174,6 @@ $('body').mouseup(function(){
 });
 
 function mousePressed(){
-	print(structure, fifthState)
 	if(mouseButton === LEFT){
 		if(structure === 1){
 			let wordPos = map(mouseY,0,width,0,spDur-1)

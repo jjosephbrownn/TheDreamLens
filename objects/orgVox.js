@@ -5,7 +5,7 @@ let vox1 = [],vox2 = []
 let voxMel = []
 let voxPos1 = 0
 let voxPos2 = 0
-let bpms = []
+let voxBPM = []
 
 let altVoxModes = [ //melodic minor modes
 	[0,2,3,5,7,9,11,12],
@@ -38,8 +38,8 @@ function vocoder(bpm){//mode === parallel or organum
 	let voxEnv2 = new p5.Envelope()
 	voxEnv1.setADSR(0.5,1,1,0.5)
 	voxEnv2.setADSR(0.5,1,1,0.5)
-	voxEnv1.setRange(0.6,0)
-	voxEnv2.setRange(0.6,0)
+	voxEnv1.setRange(0.25,0)
+	voxEnv2.setRange(0.25,0)
 	voxSamp1.amp(voxEnv1)
 	voxSamp2.amp(voxEnv2)
 
@@ -49,7 +49,7 @@ function vocoder(bpm){//mode === parallel or organum
 	voxMaster.connect()
 	voxSamp1.connect(voxMaster)
 	voxSamp2.connect(voxMaster)
-	voxMaster.amp(0.25)
+	voxMaster.amp(0.1)
 
 
 	let voxMode = JSON.parse(sessionStorage.getItem("mode"))//getting mode from nav info
@@ -66,9 +66,9 @@ function vocoder(bpm){//mode === parallel or organum
     }
 
 	let pace = bpm
-	bpms[0] = pace
-	bpms[1] = pace/4
-	bpms[2] = pace*1.5
+	voxBPM[0] = pace
+	voxBPM[1] = pace/4
+	voxBPM[2] = pace*1.5
 
 	del1 = new p5.Delay()
 	del2 = new p5.Delay()

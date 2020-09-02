@@ -23,7 +23,7 @@ let repurpose = [
     "/pages/repurpose/textTypingSarcasm.html",
     "/pages/repurpose/textRewrite.html", 
     "/pages/repurpose/textHoverMove.html",
-    "/pages/repurpose/picTransAuto"
+    "/pages/repurpose/picTransAuto.html"
 ];
 
 let cartography = [
@@ -102,7 +102,7 @@ let messages = [
 let hoverContent = [
 	"going somewhere?",
 	"onwards",
-	"another path"
+	"another path",
 	"doorway to doorway",
 	"entrances slowly reveal themselves",
 	"room upon room",

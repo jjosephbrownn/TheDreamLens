@@ -152,7 +152,6 @@ function draw(){
 }
 
 function mousePressed(){
-    print(mouseCount,rand,structure)
     mouseCount++
     if(orgState === false){
         org.begin()
@@ -166,7 +165,6 @@ function mousePressed(){
             }
             starMove++
         } else if(mouseButton === RIGHT){
-            print("yay")
             let q = random([0,1,2])
             let bpm = random([30,60,90,120])
             if(q === 0){
@@ -297,7 +295,6 @@ function story(time){
 
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html("have you tried pressing keys?")
     },2000)
@@ -305,6 +302,5 @@ function infoOn(){
 }
 
 function infoOff(){
-    console.log("off")
     infoBox.html("info")
 }

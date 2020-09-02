@@ -91,7 +91,6 @@ function setup() {
 	createCanvas(windowWidth-20,windowHeight-20);
 
 	let loops = parseInt(sessionStorage.getItem("numLoops"))
-	print(loops)
 
 	let td = select("#loader")
 
@@ -219,7 +218,7 @@ function mousePressed(){
 } 
 
 function infoOn(){
-    console.log("on")
+   
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000)
@@ -227,6 +226,6 @@ function infoOn(){
 }
 
 function infoOff(){
-	console.log("off")
+
 	infoBox.html("info")
 }

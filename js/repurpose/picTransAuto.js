@@ -141,7 +141,7 @@ function setup() {
 
 function timer(){
 	int1 = setInterval(fade,2000)
-	dur = random(2000,10000)
+	dur = random(60000,120000)
 	setTimeout(getAway, dur)
 }
 

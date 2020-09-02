@@ -22,7 +22,7 @@ let loadText
 let loadStep
 
 function preload(){
-		loadStep = sessionStorage.getItem("footsteps")
+	loadStep = sessionStorage.getItem("footsteps")
 	let load = new loadChoice()
 	let loadThing = load.loader()
 	pChoice = new piccer()
@@ -114,7 +114,7 @@ function setup() {
 
 function timer(){
 	int1 = setInterval(fade,2000)
-	dur = random(2000,10000)
+	dur = random(60000,120000)
 	setTimeout(getAway, dur)
 }
 

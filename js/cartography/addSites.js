@@ -19,10 +19,10 @@ let field
 let allSiteNames = []
 
 let maps = [
-	"../pics/maps/map1.jpg",
-	"../pics/maps/map2.jpg",
-	"../pics/maps/map3.jpg",
-	"../pics/maps/map4.jpg"
+	"/pics/maps/map1.jpg",
+	"/pics/maps/map2.jpg",
+	"/pics/maps/map3.jpg",
+	"/pics/maps/map4.jpg"
 ]
 let backMap
 
@@ -34,7 +34,7 @@ function preload(){
 
 function setup(){
 	cnv = createCanvas(windowWidth-20,windowHeight-20)
-	backMap.resize(0,height+300)
+	backMap.resize(width,0)
 	image(backMap,0,0)
 		
 	let textWidth = width*0.7
@@ -77,5 +77,4 @@ function nameLog(){
 	allSiteNames.push(newName)
 	sessionStorage.setItem("newSiteNames", JSON.stringify(allSiteNames))
 	field.value("")
-	console.log(allSiteNames)
 }

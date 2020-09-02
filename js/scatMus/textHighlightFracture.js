@@ -76,7 +76,6 @@ function setup(){
 
 	let genPrint = sessionStorage.getItem("prevPlace")
 	let cat = random([0,1,2])
-	console.log(cat)
     if(genPrint === "scatter"){
         frac = new fracture(random([1,2]))//vocal samples
         frac.params()
@@ -108,7 +107,6 @@ function setup(){
 
 		fracDur1 = frac.dur1()
 		fracDur2 = frac.dur2()
-		print(fracDur1,fracDur2)
 
 		look = createDiv(fillText)
 		look.class("text")
@@ -192,7 +190,6 @@ function mouseDragged(){
 }
 
 function mousePressed(){
-	print(mouseCount,rand,structure)
 	let fracPos1 = map(mouseX,0,width,0,fracDur1)
 	let fracPos2 = map(mouseY,0,height,0,fracDur2)
 	fracPos2 = constrain(fracPos2,0,fracDur2-1)

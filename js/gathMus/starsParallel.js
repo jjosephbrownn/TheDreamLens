@@ -218,7 +218,6 @@ function draw(){
 
 
 function mousePressed() {
-	print(structure,playState,pos)
 	translate(-width/2,-height/2,0)
 	if(playState === true){
 		if(mouseButton === LEFT){
@@ -341,13 +340,11 @@ function mousePressed() {
 }
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000) 
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }

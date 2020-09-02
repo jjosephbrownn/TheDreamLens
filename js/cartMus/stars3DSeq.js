@@ -119,7 +119,6 @@ function setup(){
     posLen = strings.length()-1
     len = strings.length()
     let thisString = strings.string()
-    print(thisString)
 
     drums = new board(8,masterBPM)
 
@@ -170,7 +169,6 @@ function draw(){
 }
 
 function mousePressed(){
-    console.log(starMove, numMoves,structure)
     if(starMove>numMoves){
         starName = markov()
         numMoves = Math.round(Math.random()*12)+4
@@ -273,7 +271,6 @@ function mousePressed(){
                 strings.tuneBPM(bpms[bpmPos])
                 bpmPos++
                 if(bpmPos === 3){bpmPos = 0}
-                console.log(bpmPos)
             },random(1000,2000))
         }           
     } else if (structure === 4){
@@ -435,7 +432,7 @@ function markov(){
 
 
 function infoOn(){
-    console.log("on")
+
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000)

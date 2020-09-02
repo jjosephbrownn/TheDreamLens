@@ -307,7 +307,7 @@
 {
   margin:0;
   left: 50%;
-  top: 75%;
+  top: 80%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
@@ -343,11 +343,11 @@
 {
   margin:0;
   left: 50%;
-  top: 15%;
+  top: 20%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   position: absolute;
-  width: 50%;
+  width: 75%;
   font-family: "centaur";
   font-size: 18px;
   text-align: center;

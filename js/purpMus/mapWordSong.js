@@ -361,7 +361,6 @@ function mousePressed(){
 		song.rates(1,0)
 		numResets = 0
 	}
-	console.log(numResets)
 }
 
 function mouseDragged(){

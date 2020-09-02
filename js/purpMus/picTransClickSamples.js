@@ -61,25 +61,11 @@ let loadStep
 let layerChoice
 
 function preload(){
-		loadStep = sessionStorage.getItem("footsteps")
-	let load = new loadChoice()
-	let loadThing = load.loader()
+	loadStep = sessionStorage.getItem("footsteps")
 	pChoice = new piccer()
 	let pic1
 	let pic2
 	layerChoice = random([0,1,2])
-
-	if(loadStep === "scatter"){
-		loadImg = loadImage(loadThing)
-	} else if(loadStep === "cartography"){
-		loadImg = loadImage(loadThing)
-	} else if (loadStep === "gather"){
-		loadText = loadStrings(loadThing)
-	} else if (loadStep === "repurpose"){
-		loadImg = loadImage(loadThing)
-	} else {
-		loadImg = loadImage(loadThing)
-	}
 	
 	if(loadStep !== "cartography"){
 		pic1 = pChoice.pic1()
@@ -102,24 +88,19 @@ function preload(){
 
 function setup() {
 	cnv = createCanvas(windowWidth-20,windowHeight-20);
+	let td = select("#loader")
 	newImg = createGraphics(width,height)
 	tempImg = createGraphics(width,height)
-
-	let td = select("#loader")
 
 	if(loadStep === "scatter"){
 		photo1.resize(0,height)
 		photo2.resize(0,height)
-		loadImg.resize(0,height)
-		image(loadImg,(width/2) - (loadImg.width/2),0)
+		
 	}else if(loadStep === "repurpose"){
 		photo1.resize(0,height)
 		photo2.resize(0,height)
-		loadImg.resize(0,height)
-		image(loadImg,(width/2) - (loadImg.width/2),0)
+		
 	}else if(loadStep === "cartography"){
-		loadImg.resize(width*1.5,0)
-		image(loadImg,random(-width/2,0),random(-height/2,0))
 		if(layerChoice === 0){
 			photo1.resize(0,height)
 			photo2.resize(width,0)
@@ -133,12 +114,10 @@ function setup() {
 	} else if (loadStep === "gather") {
 		photo1.resize(0,height)
 		photo2.resize(0,height)
-		loadText = join(loadText,"\n")
-		td.html(loadText)
+		
 	} else {
 		photo1.resize(0,height)
 		photo2.resize(0,height)
-		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 
 	noCursor();
