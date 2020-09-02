@@ -99,7 +99,6 @@ function parallel(bpm,plus,param){
 	this.firmus = function(){//adds rests into cantus
 		cantus.splice(round(random(cantus.length)), 0, " ")
  		ped.replaceSequence("cant",cantus)
- 		console.log(cantus)
 	}
 
 	this.nextNote = function(src,pos,playMode){
@@ -132,7 +131,6 @@ function parallel(bpm,plus,param){
 					env3.triggerAttack(osc31);
 					env3.triggerAttack(osc32);
 			     	osc31.freq(midiVal);
-			     	console.log(midiVal)
 				}
 			}
 		}else if(playMode === 1){
@@ -164,7 +162,6 @@ function parallel(bpm,plus,param){
 					env3.play(osc31);
 					env3.play(osc32);
 			     	osc31.freq(midiVal);
-			     	console.log(midiVal)
 				}
 			}
 		}

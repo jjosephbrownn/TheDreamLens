@@ -240,7 +240,6 @@ function spectral(type,cat){// type === type of samples
 	}
 
 	this.pass = function(src,g,ng){
-		// console.log(g,ng)
 		if(src === 1){
 			band11amp.amp(g)
 			band12amp.amp(ng)	

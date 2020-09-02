@@ -25,7 +25,6 @@ function melody(bpm,atk,del){
 		motif[i] = mode[n] + oct
 	}
 	let motLen = motif.length
-	print(motif)
 
 	motDel = new p5.Delay()
 	motVox = new p5.Phrase("motif", motSeq, motif);
@@ -52,7 +51,6 @@ function melody(bpm,atk,del){
 	}
 
 	this.begin = function(){
-		console.log("mels")
 		motPart.loop()
 	}
 
@@ -78,7 +76,6 @@ function melody(bpm,atk,del){
 	}
 
 	this.oct = function(){
-		print(motif)
 		for(i=0;i<motif.length;i++){
 			if(motif[i] !== " "){
 				motif[i] -= 12
@@ -86,11 +83,9 @@ function melody(bpm,atk,del){
 				motif[i] = motif[i]
 			}
 		}
-		print(motif)
 	}
 
 	function motSeq(time,note){
-		console.log(note)
 		if(orch === 0){
 			if(note !== " "){
 				let midiVal = midiToFreq(note);

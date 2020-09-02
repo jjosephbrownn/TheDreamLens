@@ -16,7 +16,7 @@ let randInfoMess = [
     "floating info boxes rule",
     "stop getting distracted",
     "worked it out yet?",
-    "one of these days...",
+    "one of these days/pages/scatter",
     "behind you!",
     "no",
     "hi",
@@ -40,13 +40,12 @@ let rand
 let pos = 0
 
 let newScat = [
-	"../starsFade.html",
-    // "../textAddNotes.html",
-    "../textOnly.html",
-    "../textScroll.html",
-    "../textTypingSamples.html",
-    "../perlinFlowColours.html",  
-    "../picTransAuto.html"
+	"/pages/scatter/radio.html",
+    "/pages/scatter/textOnly.html",
+    "/pages/scatter/textScroll.html",
+    "/pages/scatter/addOrg.html",
+    "/pages/scatter/picHoles.html",  
+    "/pages/scatter/picTransAuto.html"
  ];
 
 
@@ -183,7 +182,6 @@ function mousePressed(){
 			reverse = true
 		}
 	}
-	console.log(mouseCount,rand,parState,reverse)
 }
 
 function fade(){
@@ -240,7 +238,6 @@ function getAway(){
 }
 
 function infoOn(){
-	console.log("on")
 	setTimeout(function(){
 		infoBox.html("have you tried pressing keys?")
 	},2000)
@@ -248,7 +245,6 @@ function infoOn(){
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }
 

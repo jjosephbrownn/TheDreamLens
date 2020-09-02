@@ -59,10 +59,11 @@ function preload(){
 }
 
 function setup(){
-	var cnv = createCanvas(windowWidth,windowWidth);
-
+	var cnv = createCanvas(windowWidth*0.5,windowHeight*0.5);
+	var x = (windowWidth - width) / 2;
+  	var y = (windowHeight - height) / 2;
+  	cnv.position(x, y);
 	let td = select("#loader")
-
 	if(loadStep === "scatter"){
 		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
@@ -76,6 +77,7 @@ function setup(){
 		loadText = join(loadText,"\n")
 		td.html(loadText)
 	} else {
+		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 
@@ -95,11 +97,6 @@ function setup(){
 	setTimeout(function(){
 		clear()
 		td.class("loaded")
-	  	var x = (windowWidth - width) / 2;
-	  	var y = (windowHeight - height) / 2;
-	  	cnv.position(x, y);
-
-
 		cols = floor(width/scl)
 		rows = floor(height/scl)
 
@@ -208,16 +205,13 @@ function note(){
 	let oct = octaves[Math.round(Math.random()*9)]
 		switch(part%3){
 			case 0:
-				console.log(pat1)
 				strings.play1(mode1[note1]+1+oct+detune);	
 				detune += 0.1
 				break;
 			case 1:
-			console.log(pat1)
 				strings.play2(mode2[note2]+1+oct+detune);		
 				break;
 			case 2:
-			console.log(pat1)
 				strings.play3(mode3[note3]+1+oct+detune);
 				break;
 		}
@@ -244,7 +238,6 @@ function mouseDragged(){
 }
 
 function mousePressed(){
-	print(mouseCount,rand)
 	mouseCount++
 	if(mouseCount === rand){
 		pluck.oct(0.5)
@@ -259,7 +252,6 @@ function mousePressed(){
 };
 
 function infoOn(){
-	console.log("on")
 	setTimeout(function(){
 		infoBox.html("have you tried pressing keys?")
 	},2000)
@@ -267,6 +259,5 @@ function infoOn(){
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }

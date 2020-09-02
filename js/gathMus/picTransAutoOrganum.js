@@ -41,13 +41,13 @@ let rand
 let structure = 0
 
 let newScat = [
-	"../starsFade.html",
-    "../textOnly.html",
-    "../textScroll.html",
-    "../textTypingSamples.html",
-    "../perlinFlowColours.html",  
-    "../picTransAuto.html"
-];
+	"/pages/scatter/radio.html",
+    "/pages/scatter/textOnly.html",
+    "/pages/scatter/textScroll.html",
+    "/pages/scatter/addOrg.html",
+    "/pages/scatter/picHoles.html",  
+    "/pages/scatter/picTransAuto.html"
+ ];
 
 let loadImg
 let loadText
@@ -165,7 +165,6 @@ function timer(){
 
 
 function mousePressed(){
-	print(mouseCount,rand,structure,voxState)
 	if(voxState === true){
 		if(mouseButton === LEFT){
 			choir.floral()

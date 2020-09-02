@@ -140,7 +140,6 @@ function linden(loops,atk,dec){
   }
 
   this.play1 = function(pos, detune,oct){
-    console.log(detune)
     env1.triggerRelease()
     s11.rate(rate[pos] + 0.5 * oct)
     s12.rate(rate[pos] + 0.5 + detune)

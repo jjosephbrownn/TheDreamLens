@@ -244,8 +244,6 @@ function draw(){
 
 function mousePressed(){
 	if(mouseButton === LEFT){
-		console.log(siteNum,wordNum1,wordNum2)
-
 		dots[numDots] = createVector(mouseX,mouseY)
 		numDots++
 		listVoice.add(0,random(0,2))
@@ -358,7 +356,6 @@ function mousePressed(){
 		song.rates(1,0)
 		numResets = 0
 	}
-	console.log(numResets)
 }
 
 function mouseReleased(){

@@ -20,16 +20,16 @@ let flag = 0;
 
 
 let starMaps = [
-	"../pics/starMaps/page1.jpg",
-	"../pics/starMaps/page2.jpg",
-	"../pics/starMaps/page3.jpg",
-	"../pics/starMaps/page4.jpg",
-	"../pics/starMaps/page5.jpg",
-	"../pics/starMaps/page6.jpg",
-	"../pics/starMaps/page7.jpg",
-	"../pics/starMaps/page8.jpg",
-	"../pics/starMaps/page9.jpg",
-	"../pics/starMaps/page10.jpg",
+	"/pics/starMaps/page1.jpg",
+	"/pics/starMaps/page2.jpg",
+	"/pics/starMaps/page3.jpg",
+	"/pics/starMaps/page4.jpg",
+	"/pics/starMaps/page5.jpg",
+	"/pics/starMaps/page6.jpg",
+	"/pics/starMaps/page7.jpg",
+	"/pics/starMaps/page8.jpg",
+	"/pics/starMaps/page9.jpg",
+	"/pics/starMaps/page10.jpg",
 ]
 
 

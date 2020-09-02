@@ -161,10 +161,7 @@ function fracture(sound1,sound2){ //type = sample type, cat = scat gath etc
 	samp2.addPhrase(samp2Phrase)
 	samp2.setBPM(pace)
 
-	console.log(s1,s2)
-
 	this.fracBegin = function(src){
-		print(src)
 		userStartAudio()
 		if(src === 0){
 			samp1.loop();
@@ -285,7 +282,6 @@ function fracture(sound1,sound2){ //type = sample type, cat = scat gath etc
 	}
 
 	function seq1(time,start){
-		print(start)
 		filt1.freq(filt1Pat[place1])
 
 		del1.delayTime(del1Pat[place1])
@@ -322,7 +318,6 @@ function fracture(sound1,sound2){ //type = sample type, cat = scat gath etc
 	}
 
 	this.add = function(src,pat){
-		print(src,pat)
 		if(src === 0){
 			if(pats1.length<16){
 				pats1.push(pat)

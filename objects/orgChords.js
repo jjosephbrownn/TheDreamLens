@@ -36,7 +36,6 @@ function orgChord(plus,paramSrc){
 		top[i] = chordMode[n] + oct
 		mid[i] = chordMode[n] + oct
 	}
-	console.log(bass,mid,top)
 
 	cFilt1 = new p5.HighPass();
 	cFilt2 = new p5.HighPass();
@@ -70,7 +69,6 @@ function orgChord(plus,paramSrc){
 	}
 
 	this.nextNote = function(on,pos){	
-		console.log(on,pos)	
 		if(on === 0){
 			return null
 		} else if(on === 1){
@@ -184,7 +182,6 @@ function orgChord(plus,paramSrc){
   	}
 
 	function params(paramSrc){
-		console.log(paramSrc)
 		if(paramSrc === 0){
 			chord11 = new p5.Oscillator("sine");
 			chord21 = new p5.Oscillator("sine");

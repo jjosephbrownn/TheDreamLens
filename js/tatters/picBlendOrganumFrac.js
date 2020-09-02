@@ -59,7 +59,6 @@ function preload(){
 		loadImg = loadImage(loadThing)
 	}
 	
-	
 	pic1 = pChoice.pic1(random([0,1]))
 	pic2 = pChoice.pic2(random([0,1]))	
 	
@@ -68,7 +67,7 @@ function preload(){
 }
 
 function setup() {
-	createCanvas(windowWidth-20,windowHeight-20);
+	createCanvas(windowWidth*0.9,windowHeight*0.9);
 
 	let td = select("#loader")
 
@@ -273,7 +272,6 @@ function mousePressed(){
 } 
 
 function mouseReleased(){
-	console.log(reverse)
 	if(reverse === false){
 		if(playState === true){
 			return null
@@ -383,7 +381,6 @@ function mouseReleased(){
 				org.nextNote(2,pos)
 				pos++
 			}
-			console.log(pos,posLen)
 			if(pos === posLen){
 				playState = false;
 				fracState = true;

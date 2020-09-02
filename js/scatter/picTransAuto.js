@@ -9,13 +9,12 @@ let word
 let dur
 
 let newScat = [
-	"../starsFade.html",
-    // "../textAddNotes.html",
-    "../textOnly.html",
-    "../textScroll.html",
-    "../textTypingSamples.html",
-    "../perlinFlowColours.html",  
-    "../picTransAuto.html"
+	"/pages/scatter/radio.html",
+    "/pages/scatter/textOnly.html",
+    "/pages/scatter/textScroll.html",
+    "/pages/scatter/addOrg.html",
+    "/pages/scatter/picHoles.html",  
+    "/pages/scatter/picTransAuto.html"
  ];
 
 let loadImg

@@ -261,7 +261,6 @@ function fracture(type,cat){ //
 			stabs[i] = random(0,s3.duration())
 		}	
 		samp3.replaceSequence("samp3",stabs)
-		print(s1,s2,s1b,s2b)
 	},2000)
 
 	pace = 40
@@ -350,7 +349,6 @@ function fracture(type,cat){ //
 		}		
 	}
 	this.patterns = function(){
-		print(pats1,pats2)
 	}
 
 	this.samplePlay = function(src,start,pan){//with cue start
@@ -398,7 +396,6 @@ function fracture(type,cat){ //
 	}
 
 	this.fifths = function(src){
-		print(src)
 		if(src === 0){
 			filt1.freq(filt1Pat[place1])
 			del1.process(s1,del1Pat[place1],fdbk1Pat[place1])
@@ -483,7 +480,6 @@ function fracture(type,cat){ //
 	}
 
 	function seq2(time,start){	
-		print(place2)
 		filt2.freq(filt2Pat[place2])
 		// print(del2Pat[place2])
 		// del2.delayTime(del2Pat[place2])
@@ -602,7 +598,6 @@ function fracture(type,cat){ //
 				fdbk3Pat[i] = Math.random()*0.5
 			}
 		}
-			print(del2Pat)
 	}
 }
 

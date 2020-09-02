@@ -300,7 +300,6 @@ function songer(length){ //
 					rate2Pat[i] = 1
 				}
 			} else if(src === 2){
-				console.log("yay")
 				for(i=0;i<16;i++){
 					rate3Pat[i] = 1
 				}
@@ -345,7 +344,6 @@ function songer(length){ //
 
 	this.lenChange = function(newLen){
 		len = newLen
-		console.log(len)
 	}
 
 	this.alter = function(pos,inc){

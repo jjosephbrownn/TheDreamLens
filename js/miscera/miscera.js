@@ -24,7 +24,7 @@ function setup(){
 
 	let fillText = join(t,"\n")
 		
-	let textWidth = width*0.7
+	let textWidth = width*0.55
 	let textHeight = height/2
 
 	marginL = (width/2)-(textWidth/2)

@@ -88,20 +88,40 @@ let messages = [
 	"a few steps to your left",
 	"under the stairs, behind the coats",
 	"beneath the pile of dusty oddments",
-	"a little further to your right"
+	"a little further to your right",
+	"right around the next corner",
+	"something you haven't seen yet",
+	"take another turn around the room",
+	"find again that room of dusty light",
+	"you might have been here before",
+	"sometimes these rooms can look very familiar",
+	"from cellar to attic",
+	"If we were the architects of an oneiric house...",
 ]
 
 let hoverContent = [
 	"going somewhere?",
 	"onwards",
 	"another path"
+	"doorway to doorway",
+	"entrances slowly reveal themselves",
+	"room upon room",
+	"empty time empty space",
+	"other voices, other rooms",
+	"still silence and dust"
 ]
 let hoverQ = [
 	"is there a beneath?",
 	"need more light?",
 	"which floorboard?",
 	"how far?",
-	"draw the curtains?"
+	"draw the curtains?",
+	"how many doorways?",
+	"through or around?",
+	"vertical or horizontal?",
+	"daydream or nightdream?",
+	"complicit or obstructive?",
+	"infinite or circular?"
 ]
 
 let modalities = [

@@ -43,47 +43,12 @@ let loadText
 let loadStep
 let aph,pluck,song
 
-function preload(){
-	loadStep = sessionStorage.getItem("footsteps")
-	let load = new loadChoice()
-	let loadThing = load.loader()
-	
-	if(loadStep === "scatter"){
-		loadImg = loadImage(loadThing)
-	} else if(loadStep === "cartography"){
-		loadImg = loadImage(loadThing)
-	} else if (loadStep === "gather"){
-		loadText = loadStrings(loadThing)
-	} else if (loadStep === "repurpose"){
-		loadImg = loadImage(loadThing)
-	} else {
-		loadImg = loadImage(loadThing)
-	}
-}
-
-
 function setup() {
 	cnv = createCanvas(windowWidth-20,windowHeight-20);
 
 	let td = select("#loader")
 
 	let loops = parseInt(sessionStorage.getItem("numLoops"))
-
-	if(loadStep === "scatter"){
-		loadImg.resize(0,height)
-		image(loadImg,(width/2) - (loadImg.width/2),0)
-	}else if(loadStep === "repurpose"){
-		loadImg.resize(0,height)
-		image(loadImg,(width/2) - (loadImg.width/2),0)
-	}else if(loadStep === "cartography"){
-		loadImg.resize(width*1.5,0)
-		image(loadImg,random(-width/2,0),random(-height/2,0))
-	} else if (loadStep === "gather") {
-		loadText = join(loadText,"\n")
-		td.html(loadText)
-	} else {
-		image(loadImg,(width/2) - (loadImg.width/2),0)
-	}
 
 	let tatOct = round(random(24,60))
 	let tatBPM = round(random(60,90))
@@ -93,31 +58,30 @@ function setup() {
 	aph.startUp()
 	pluck.startUp()
 	
+	td.class("loaded")
+	background(0);
+
+	xmin = width/20
+	xmax = width-xmin
+	ymin = height/10
+	ymax = height-ymin
+
+	for(i=0;i<9;i++){
+		x1[i] = Math.floor(Math.random()*(xmax-xmin+1)+xmin)
+		y1[i] = Math.floor(Math.random()*(ymax-ymin+1)+ymin)
+		ex[i] = x1[i]+((Math.random()*50)-25)
+		ey[i] = y1[i]+((Math.random()*50)-25)
+	};	
+
+	for(i=0;i<100;i++){
+		starX[i] = Math.random()*width
+		starY[i] = Math.random()*height
+		stroke(255)
+		strokeWeight(1.5)
+		point(starX[i],starY[i])
+	}
+
 	setTimeout(function(){
-		clear()
-		td.class("loaded")
-		background(0);
-
-		xmin = width/20
-		xmax = width-xmin
-		ymin = height/10
-		ymax = height-ymin
-
-		for(i=0;i<9;i++){
-			x1[i] = Math.floor(Math.random()*(xmax-xmin+1)+xmin)
-			y1[i] = Math.floor(Math.random()*(ymax-ymin+1)+ymin)
-			ex[i] = x1[i]+((Math.random()*50)-25)
-			ey[i] = y1[i]+((Math.random()*50)-25)
-		};	
-
-		for(i=0;i<100;i++){
-			starX[i] = Math.random()*width
-			starY[i] = Math.random()*height
-			stroke(255)
-			strokeWeight(1.5)
-			point(starX[i],starY[i])
-		}
-
 		dur1 = song.dur(0)
 		dur2 = song.dur(1)
 		cue1a = random(0,dur1-1)
@@ -128,23 +92,24 @@ function setup() {
 		end2a = random()
 		end1b = random()
 		end2b = random()
+	},2000)
+	
 
-		strin = aph.length()-1
+	strin = aph.length()-1
 
-		rand = round(random(6,12))
+	rand = round(random(6,12))
 
-		setInterval(aphNote,500)
+	setInterval(aphNote,500)
 
-		infoBox = createDiv("info")
-		infoBox.class("info")
-		infoBox.style("display", "none")
-		infoBox.position(15,15)
-		infoBox.mouseOver(infoOn)
-		infoBox.mouseOut(infoOff)
-		setTimeout(function(){
-			infoBox.style("display", "block")
-		},120000)
-	},5000)
+	infoBox = createDiv("info")
+	infoBox.class("info")
+	infoBox.style("display", "none")
+	infoBox.position(15,15)
+	infoBox.mouseOver(infoOn)
+	infoBox.mouseOut(infoOff)
+	setTimeout(function(){
+		infoBox.style("display", "block")
+	},120000)
 };
 
 function mousePressed(){
@@ -176,7 +141,6 @@ function mousePressed(){
 			aph.stop(4)
 		}
 	}
-	print(mouseCount,rand,structure)
 }
 
 function mouseReleased(){
@@ -345,7 +309,6 @@ function draw(){
 
 
 function infoOn(){
-	console.log("on")
 	setTimeout(function(){
 		infoBox.html("have you tried pressing keys?")
 	},2000)
@@ -353,7 +316,6 @@ function infoOn(){
 }
 
 function infoOff(){
-	console.log("off")
 	infoBox.html("info")
 }
 

@@ -94,7 +94,6 @@ let allpics = [scatPic,gathPic,cartPic,purpPic]
 function piccer(){
 
 	let print = sessionStorage.getItem("footsteps")
-	console.log(print)
 	let file1,file2
 
 	this.pic1 = function(){
@@ -118,7 +117,6 @@ function piccer(){
 			let r = round(random(allpics.length-1))
 			gr1 = allpics[r]
 			file1 = gr1[round(random(gr1.length-1))]
-			console.log(file1)
 			return(file1)
 			//fill this with scans or something - lacunae contents
 		}else {
@@ -149,7 +147,6 @@ function piccer(){
 			let r = round(random(allpics.length-1))
 			gr1 = allpics[r]
 			file1 = gr1[round(random(gr1.length-1))]
-			console.log(file1)
 			return(file1)
 			//fill this with scans or something - lacunae contents
 		} else {

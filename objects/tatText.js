@@ -24,7 +24,7 @@ let cartGathCents = [
 	"/words/gathCent2.txt",
 	"/words/gathCent3.txt",
 	"/words/gathCent4.txt",
-	"..../words/gathCent5.txt",
+	"/words/gathCent5.txt",
 	"/words/gathCent6.txt",
 	"/words/gathCent7.txt",
 	"/words/gathCent8.txt",

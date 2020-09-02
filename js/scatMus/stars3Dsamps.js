@@ -79,7 +79,6 @@ function setup(){
 
 
     let genPrint = sessionStorage.getItem("prevPlace")
-        print(genPrint)
     if(genPrint === "scatter"){
         frac = new fracture(2)//facture sounds
         song = new songer(round(random(15)))//simple sounds
@@ -95,7 +94,6 @@ function setup(){
         fdur2 = frac.dur2()
         sdur1 = song.dur(0)
         sdur2 = song.dur(1)
-            print(fdur1,fdur2)
     },5000)
 
 
@@ -180,7 +178,6 @@ function draw(){
 }
 
 function mousePressed(){
-    print("structure",structure)
     if(structure === 0){
         if(mouseButton === LEFT){
             let place1 = map(mouseX,0,width,0,fdur1)
@@ -292,7 +289,6 @@ function markov(){
 }
 
 function infoOn(){
-    console.log("on")
     setTimeout(function(){
         infoBox.html(randInfoMess[round(random(randInfoMess.length-1))])
     },2000)
@@ -300,6 +296,5 @@ function infoOn(){
 }
 
 function infoOff(){
-    console.log("off")
     infoBox.html("info")
 }

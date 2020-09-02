@@ -28,14 +28,14 @@ let word
 let wordState = true
 
 let circuits = [
-	"../pics/circuits/circ1.jpg",
-	"../pics/circuits/circ2.jpg",
-	"../pics/circuits/circ3.jpg",
-	"../pics/circuits/circ4.jpg",
-	"../pics/circuits/circ5.jpg",
-	"../pics/circuits/circ6.jpg",
-	"../pics/circuits/circ7.jpg",
-	"../pics/circuits/circ8.jpg",
+	"/pics/circuits/circ1.jpg",
+	"/pics/circuits/circ2.jpg",
+	"/pics/circuits/circ3.jpg",
+	"/pics/circuits/circ4.jpg",
+	"/pics/circuits/circ5.jpg",
+	"/pics/circuits/circ6.jpg",
+	"/pics/circuits/circ7.jpg",
+	"/pics/circuits/circ8.jpg",
 ]
 
 let loadImg
@@ -154,7 +154,6 @@ window.addEventListener('keydown', function(e) {
     e.preventDefault();
   }
 
-  	print(spacePos, structure)
 	let a = event.key
 	let b = event.keyCode
 
@@ -230,7 +229,6 @@ function fader(){
 	let t = Math.random()*height
 
 	alph = innerText.length
-	print(alph)
 	tint(255,alph)
 	image(backMap,r,t,200,200,r,t,200,200); 
 } 

@@ -178,7 +178,7 @@ function preload(){
 	let pChoice = new piccer()
 	let pic1 = pChoice.mapPic()
 	photo1 = loadImage(pic1);
-	mapFont = loadFont("fonts/PfefferMediaeval.otf")
+	mapFont = loadFont("/fonts/PfefferMediaeval.otf")
 }
 
 function setup() {
@@ -221,7 +221,7 @@ function setup() {
 }
 
 function draw(){
-	stroke(0)
+	stroke(1)
     strokeWeight(1)  
     image(photo1,mapx,mapy); 
   	textSize(24)
@@ -238,7 +238,7 @@ function draw(){
   	}
 	
     for(m=0;m<numDots-1;m++){//draws tris
-    	stroke(0)
+    	stroke(1)
     	strokeWeight(4)
         line(dots[m].x,dots[m].y,dots[m+1].x,dots[m+1].y)//tri dots
         if(numChanges > 4){
@@ -254,7 +254,7 @@ function draw(){
     } 
 
     for(m=0;m<numDots-1;m++){//draws tris
-    	stroke(0)
+    	stroke(1)
     	strokeWeight(1)
      	text(siteNames[m],dots[m].x+25,dots[m].y-25)
     } 

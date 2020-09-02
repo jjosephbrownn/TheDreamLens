@@ -413,7 +413,6 @@ function aphex(numloops,oct,pace,rhythm){
     let midiVal = midiToFreq(seqNotes[pos4]+oct4)
     tune1.freq(midiVal)
     tune2.freq(midiVal*1.5)
-    console.log(pos4,midiVal)
     filtEnv4.play()
     env4.play()
     pos4++
@@ -530,7 +529,6 @@ function aphex(numloops,oct,pace,rhythm){
   }
 
   this.fmChange = function(fmf,fma){
-    console.log(fmf,fma)
     fm1.freq(fmf)
     fm2.freq(fmf)
     fm3.freq(fmf)

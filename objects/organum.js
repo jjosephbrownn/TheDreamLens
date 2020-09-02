@@ -324,7 +324,6 @@ function organa(bpm,plus,param){
 	 	}
 	 	tenor.replaceSequence("tenor", ten)
 	 	disc.replaceSequence("alt", alt)
-	 	print(ten,alt)
 	}
 
 	this.paramChange = function(atk,dec,filt){

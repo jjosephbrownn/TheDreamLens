@@ -137,7 +137,6 @@ function linden(loops,atk,dec){
     s12.play()
     env1.triggerAttack()
     env1.triggerAttack()
-    console.log("1",pos,detune)
   }
 
   this.play2 = function(pos,detune){
@@ -153,7 +152,6 @@ function linden(loops,atk,dec){
     s22.play()
     env2.triggerAttack()
     env2.triggerAttack()
-    console.log("2")
   }
   
   this.play3 = function(pos,detune){
@@ -169,7 +167,6 @@ function linden(loops,atk,dec){
     s32.play()
     env3.triggerAttack()
     env3.triggerAttack()
-    console.log("3")
   }
 
   this.oct = function(oct){

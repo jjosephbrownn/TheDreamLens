@@ -168,7 +168,6 @@ function vocoder(bpm){//mode === parallel or organum
 	}
 
 	this.intonPitch = function(src){
-		print(src)
 		if(src === 0){
 			voxPos1++
 			voxSamp1.rate(voxMel[voxPos1]+0.5)
@@ -201,7 +200,6 @@ function vocoder(bpm){//mode === parallel or organum
 	}
 
 	function seq1(time,note){
-		print(note)
 		if(note !== " "){
 			voxSamp1.pause()
 			voxSamp1.rate(note+0.5)

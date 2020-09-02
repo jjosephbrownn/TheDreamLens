@@ -133,7 +133,6 @@ function linden(loops,oct,atk,dec,param){
     for(i=0;i<thestring.length;i++){
       stringMel[i] = parseInt(thestring[i], 10)
     }
-    console.log(stringMel)
     for(i=0;i<stringMel.length;i++){ // creating cantus by mapping melody primitive to stored mode (0,1,2 in mel = 0,2,4 ionian or 0,1,3 phrygian)
       let n = stringMel[i]
       stringMel[i] = mode[n]
@@ -203,7 +202,6 @@ function linden(loops,oct,atk,dec,param){
     del2.process(voice22, del2pat[pos], fdbk2pat[pos],750)
     voice21.pan(pan2pat[pos])
     voice22.pan(pan2pat[pos])
-    console.log(pan2pat[pos])
     voice21.freq(midiVal + detune)
     voice22.freq(midiVal + detune + midiVal/2)
     env2.play()
@@ -286,7 +284,6 @@ function linden(loops,oct,atk,dec,param){
       env2.setRange(0.1,0)
       env3.setRange(0.1,0)
     }    
-    console.log(pan2pat)
   }
 
   this.atkChange = function(newAtk){
