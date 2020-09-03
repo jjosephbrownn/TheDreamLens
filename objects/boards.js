@@ -1,11 +1,32 @@
+let possKicks = [
+  "/soundz/soundrecs/drums/kick1.wav"
+  "/soundz/soundrecs/drums/kick2.wav"
+  "/soundz/soundrecs/drums/kick3.wav"
+]
+
+let possSnares = [
+  "/soundz/soundrecs/drums/snare1.wav"
+  "/soundz/soundrecs/drums/snare2.wav"
+  "/soundz/soundrecs/drums/snare3.wav"
+  "/soundz/soundrecs/drums/snare4.wav"
+  "/soundz/soundrecs/drums/snare5.wav"
+]
+let possHats = [
+  "/soundz/soundrecs/drums/hat1.wav"
+  "/soundz/soundrecs/drums/hat2.wav"
+  "/soundz/soundrecs/drums/hat3.wav"
+]
+
+
+
 function board(len,pace){
 
     let k,sn,hh
     let rateState = false
-    k = loadSound("/soundz/soundrecs/drums/k.wav")
-    sn = loadSound("/soundz/soundrecs/drums/808sn.wav")
-    hh = loadSound("/soundz/soundrecs/drums/808ch.wav")
-    oh = loadSound("/soundz/soundrecs/drums/808oh.wav")
+    k = loadSound(possKicks[round(random(possKicks.length-1))])
+    sn = loadSound(possSnares[round(random(possSnares.length-1))])
+    hh = loadSound(possHats[round(random(possHats.length-1))])
+    oh = loadSound("/soundz/soundrecs/drums/oh.wav")
 
     let ost1 = loadSound("/soundz/soundrecs/purpSamps/archGuitar.mp3")
     let ost2 = loadSound("/soundz/soundrecs/purpSamps/archGuitar.mp3")

@@ -1,9 +1,29 @@
+let beatKicks = [
+  "/soundz/soundrecs/drums/kick1.wav"
+  "/soundz/soundrecs/drums/kick2.wav"
+  "/soundz/soundrecs/drums/kick3.wav"
+]
+
+let beatSnares = [
+  "/soundz/soundrecs/drums/snare1.wav"
+  "/soundz/soundrecs/drums/snare2.wav"
+  "/soundz/soundrecs/drums/snare3.wav"
+  "/soundz/soundrecs/drums/snare4.wav"
+  "/soundz/soundrecs/drums/snare5.wav"
+]
+let beatHats = [
+  "/soundz/soundrecs/drums/hat1.wav"
+  "/soundz/soundrecs/drums/hat2.wav"
+  "/soundz/soundrecs/drums/hat3.wav"
+]
+
+
 function beater(pace){
 
     let k,sn,hh,sb,oh
-    k = loadSound("/soundz/soundrecs/drums/k.wav")
-    sn = loadSound("/soundz/soundrecs/drums/808sn.wav")
-    hh = loadSound("/soundz/soundrecs/drums/808ch.wav")
+    k = loadSound(beatKicks[round(random(beatKicks.length-1))])
+    sn = loadSound(beatSnares[round(random(beatSnares.length-1))])
+    hh = loadSound(beatHats[round(random(beatHats.length-1))])
     sb = loadSound("/soundz/soundrecs/drums/808sb.wav")
     oh = loadSound("/soundz/soundrecs/drums/808oh.wav")
 

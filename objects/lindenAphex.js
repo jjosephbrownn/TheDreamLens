@@ -2,10 +2,10 @@ function aphex(numloops,oct,pace,rhythm){
 
   let mode = JSON.parse(sessionStorage.getItem("mode"))//getting mode from nav info
 
-  let aphK = loadSound("/soundz/soundrecs/drums/k.wav")
-  let aphSn = loadSound("/soundz/soundrecs/drums/808sn.wav")
-  let aphH = loadSound("/soundz/soundrecs/drums/808ch.wav")
-  let aphO = loadSound("/soundz/soundrecs/drums/808oh.wav")
+  let aphK = loadSound("/soundz/soundrecs/drums/kick1.wav")
+  let aphSn = loadSound("/soundz/soundrecs/drums/snare1.wav")
+  let aphH = loadSound("/soundz/soundrecs/drums/hat1.wav")
+  let aphO = loadSound("/soundz/soundrecs/drums/oh.wav")
 
   let sampleState = false
 
