@@ -113,6 +113,7 @@ function setup() {
 	} else {
 		photo1.resize(0,height)
 		photo2.resize(0,height)
+		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 

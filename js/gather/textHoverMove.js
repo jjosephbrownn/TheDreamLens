@@ -90,6 +90,7 @@ function setup() {
 		loadText = join(loadText,"\n")
 		td.html(loadText)
 	} else {
+		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 	

@@ -71,18 +71,14 @@ function preload(){
 
 	if(loadStep === "scatter"){
 		loadImg = loadImage(loadThing)
-		loadImg.resize(0,height)
 	} else if(loadStep === "cartography"){
 		loadImg = loadImage(loadThing)
-		loadImg.resize(0,height)
 	} else if (loadStep === "gather"){
 		loadText = loadStrings(loadThing)
 	} else if (loadStep === "repurpose"){
 		loadImg = loadImage(loadThing)
-		loadImg.resize(0,height)
 	} else {
 		loadImg = loadImage(loadThing)
-		loadImg.resize(0,height)
 	}
 	
 	if(loadStep !== "cartography"){
@@ -140,6 +136,7 @@ function setup() {
 	} else {
 		photo1.resize(0,height)
 		photo2.resize(0,height)
+		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 
