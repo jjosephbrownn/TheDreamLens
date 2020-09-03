@@ -101,6 +101,7 @@ function setup(){
 		loadText = join(loadText,"\n")
 		td.html(loadText)
 	} else {
+		loadImg.resize(0,height)
 		image(loadImg,(width/2) - (loadImg.width/2),0)
 	}
 
@@ -139,7 +140,7 @@ function setup(){
 		titleL = (width/2)-(titleWidth/2)
 		titleT = height/25;
 		
-		textWidth = width*0.7
+		textWidth = width*0.55
 		textHeight = height/2
 
 		marginL = (width/2)-(textWidth/2)

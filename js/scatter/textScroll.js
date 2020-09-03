@@ -117,7 +117,7 @@ function setup(){
 	paras[4] = para5.join(" ")
 	paras[5] = para6.join(" ")
 
-	textWidth = width*0.7
+	textWidth = width*0.55
 	textHeight = height/2
 
 	marginL = (width/2)-(textWidth/2)

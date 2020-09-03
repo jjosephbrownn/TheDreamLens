@@ -108,7 +108,7 @@ function setup(){
 		titleL = (width/2)-(titleWidth/2)
 		titleT = height/25;
 		
-		textWidth = width*0.7
+		textWidth = width*0.55
 		textHeight = height/2
 
 		marginL = (width/2)-(textWidth/2)

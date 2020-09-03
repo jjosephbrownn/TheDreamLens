@@ -97,7 +97,7 @@ function setup(){
 	titleL = (width/2)-(titleWidth/2)
 	titleT = height/25;
 
-	let textWidth = width*0.7
+	let textWidth = width*0.55
 	let textHeight = height/2
 
 	marginL = (width/2)-(textWidth/2)
