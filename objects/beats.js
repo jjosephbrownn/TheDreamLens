@@ -1,19 +1,19 @@
 let beatKicks = [
-  "/soundz/soundrecs/drums/kick1.wav"
-  "/soundz/soundrecs/drums/kick2.wav"
+  "/soundz/soundrecs/drums/kick1.wav",
+  "/soundz/soundrecs/drums/kick2.wav",
   "/soundz/soundrecs/drums/kick3.wav"
 ]
 
 let beatSnares = [
-  "/soundz/soundrecs/drums/snare1.wav"
-  "/soundz/soundrecs/drums/snare2.wav"
-  "/soundz/soundrecs/drums/snare3.wav"
-  "/soundz/soundrecs/drums/snare4.wav"
+  "/soundz/soundrecs/drums/snare1.wav",
+  "/soundz/soundrecs/drums/snare2.wav",
+  "/soundz/soundrecs/drums/snare3.wav",
+  "/soundz/soundrecs/drums/snare4.wav",
   "/soundz/soundrecs/drums/snare5.wav"
 ]
 let beatHats = [
-  "/soundz/soundrecs/drums/hat1.wav"
-  "/soundz/soundrecs/drums/hat2.wav"
+  "/soundz/soundrecs/drums/hat1.wav",
+  "/soundz/soundrecs/drums/hat2.wav",
   "/soundz/soundrecs/drums/hat3.wav"
 ]
 
