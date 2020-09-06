@@ -357,6 +357,10 @@ div#navOn:hover  {
   opacity: 100%;
 }
 
+[id="move"]:hover{
+  opacity: 100%;
+}
+
 .info 
 {
   z-index: 1;
@@ -376,6 +380,11 @@ div#navOn:hover  {
 
 div.info:hover
 {
+  width: 25%;
+  opacity: 100%;
+}
+
+[class = "info"]:hover{
   width: 25%;
   opacity: 100%;
 }
