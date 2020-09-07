@@ -17,15 +17,19 @@
 
 <h2>2 – Structure and Navigation</h2>
 <h3>2.1 – Hierarchy and Index</h3
-<p>Pages are ordered into three principle levels:<br>
-<p class = "pseudo">1.	“template”: visual only, no audio<br>
-2.	Audio-visual: template pages with site-specific music interaction<br>
-3.	Advanced audio-visual: a page from category two with combined with another sound making engine (see “music machines”)</p>
-<p>This hierarchy is striated by four basic aesthetic subcategories</p>
-<p class = "pseudo">1.	<b>Scatter</b> – narrative, stories, poetry, fiction, folk song, train of thought<br>
-2.	<b>Gather</b> – collection, memory, history, taxonomy, lists<br>
-3.	<b>Cartography</b> – mapping, recombination, patterns, ancient history<br>
-4.	<b>Repurpose</b> – technology, philosophy, sampling, sound recordings</p>
+<p>Pages are ordered into three principle levels:
+<ol>
+<li>“template”: visual only, no audio</li>
+<li>Audio-visual: template pages with site-specific music interaction</li>
+<li>Advanced audio-visual: a page from category two with combined with another sound making engine (see “music machines”)</li>
+</ol>
+This hierarchy is striated by four basic aesthetic subcategories
+<ol>
+<li><b>Scatter</b> – narrative, stories, poetry, fiction, folk song, train of thought</li>
+<li><b>Gather</b> – collection, memory, history, taxonomy, lists</li>
+<li><b>Cartography</b> – mapping, recombination, patterns, ancient history</li>
+<li><b>Repurpose</b> – technology, philosophy, sampling, sound recordings</li>
+</ol>
 <p>These are supplemented by a “combination” category <b>Tatters</b> which is the home of the third principle category pages.  Level two contains usually one music making device (or, if more than one, several similar machines).  Level three combines two different sound sources and aesthetic categories and subverts any of the rules learnt by the user concerning interaction.</p>
 <p>The final categories are <b>Lacunae</b> and <b>Miscera</b>.  The former contains fixed media pages: web zines, explanatory diagrams and other resources from the building process.  The latter contains the contextual review and this very appendix.</p>
 
