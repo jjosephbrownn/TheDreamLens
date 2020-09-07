@@ -4,12 +4,10 @@ let scatter = [
     "/pages/scatter/textOnly.html",
     "/pages/scatter/textScroll.html",
     "/pages/scatter/picHoles.html",
-    "/pages/scatter/picTransAuto.html"
 ];
 
 let gather = [
 	"/pages/gather/perlinFlowColours.html",
-    "/pages/gather/picTransClick.html",
     "/pages/gather/starsDraw.html",
     "/pages/gather/textOnly.html",
     "/pages/gather/textHighlight.html",
@@ -19,11 +17,9 @@ let gather = [
 let repurpose = [
     "/pages/repurpose/starsMove.html",
     "/pages/repurpose/textOnly.html",
-    "/pages/repurpose/textTypingPic.html",
     "/pages/repurpose/textTypingSarcasm.html",
     "/pages/repurpose/textRewrite.html", 
-    "/pages/repurpose/textHoverMove.html",
-    "/pages/repurpose/picTransAuto.html"
+    "/pages/repurpose/picTransAuto"
 ];
 
 let cartography = [
@@ -31,9 +27,7 @@ let cartography = [
 	"/pages/cartography/addLinden.html",
 	"/pages/cartography/stars3DName.html",
     "/pages/cartography/textOnly.html",
-    "/pages/cartography/textHoverMove.html",
     "/pages/cartography/mapWord.html",
-	"/pages/cartography/textScroll.html"
 ];
 
 let scatGath = [//ga previous scat, VOICE (sung) samples
