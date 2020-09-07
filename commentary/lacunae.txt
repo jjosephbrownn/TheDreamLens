@@ -1,8 +1,8 @@
-<h1>Lacunae: Appendices</h1>
+<h1 class = "miscTitle">Lacunae: Appendices</h1>
 
 <p>These appendices analyse and explain some of the details of the site’s functionality.  Sections are referenced in the commentary thus: <b>Section 1.1.</b>  To be found here also are references specific to the code used (also included within the JavaScript files themselves)</p>
 <p>This website was written in JavaScript (JS), P5.js which is an implementation of Processing in JS, and P5.sound, a P5 library which uses the JS WebAudio API.</p>
-<p>The site is stored in a public GitHub repository which can be accessed at https://github.com/jjosephbrownn/TheDreamLens.  This is identical to the code handed in with an additional “readme” file which contextualises the repository.  The third part web app Netlify hosts this repository as a website: the repository is therefore “the website”.  At the top of the repository can be found a time stamp of the last “commit”.  This will display the last time anything was added or changed.  This will display a time before this project’s deadline and will confirm that nothing has been added or changed after the deadline has passed.  The live website cannot be altered without access to the repository and thus a change in the time stamp.</p>
+<p>The site is stored in a public GitHub repository which can be accessed <a class = "gitLink" href = "https://github.com/jjosephbrownn/TheDreamLens">here</a>.  This is identical to the code handed in with an additional “readme” file which contextualises the repository.  The third part web app Netlify hosts this repository as a website: the repository is therefore “the website”.  At the top of the repository can be found a time stamp of the last “commit”.  This will display the last time anything was added or changed.  This will display a time before this project’s deadline and will confirm that nothing has been added or changed after the deadline has passed.  The live website cannot be altered without access to the repository and thus a change in the time stamp.</p>
 
 <h2>1 - Functionality </h2>
 <h3>1.1 Introductory Remarks</h3>
@@ -17,15 +17,15 @@
 
 <h2>2 – Structure and Navigation</h2>
 <h3>2.1 – Hierarchy and Index</h3
-<p>Pages are ordered into three principle levels:</p>
-<p>1.	“template”: visual only, no audio</p>
-<p>2.	Audio-visual: template pages with site-specific music interaction</p>
-<p>3.	Advanced audio-visual: a page from category two with combined with another sound making engine (see “music machines”)</p>
+<p>Pages are ordered into three principle levels:<br>
+<p class = "pseudo">1.	“template”: visual only, no audio<br>
+2.	Audio-visual: template pages with site-specific music interaction<br>
+3.	Advanced audio-visual: a page from category two with combined with another sound making engine (see “music machines”)</p>
 <p>This hierarchy is striated by four basic aesthetic subcategories</p>
-<p>1.	<b>Scatter</b> – narrative, stories, poetry, fiction, folk song, train of thought</p>
-<p>2.	<b>Gather</b> – collection, memory, history, taxonomy, lists</p>
-<p>3.	<b>Cartography</b> – mapping, recombination, patterns, ancient history</p>
-<p>4.	<b>Repurpose</b> – technology, philosophy, sampling, sound recordings</p>
+<p class = "pseudo">1.	<b>Scatter</b> – narrative, stories, poetry, fiction, folk song, train of thought<br>
+2.	<b>Gather</b> – collection, memory, history, taxonomy, lists<br>
+3.	<b>Cartography</b> – mapping, recombination, patterns, ancient history<br>
+4.	<b>Repurpose</b> – technology, philosophy, sampling, sound recordings</p>
 <p>These are supplemented by a “combination” category <b>Tatters</b> which is the home of the third principle category pages.  Level two contains usually one music making device (or, if more than one, several similar machines).  Level three combines two different sound sources and aesthetic categories and subverts any of the rules learnt by the user concerning interaction.</p>
 <p>The final categories are <b>Lacunae</b> and <b>Miscera</b>.  The former contains fixed media pages: web zines, explanatory diagrams and other resources from the building process.  The latter contains the contextual review and this very appendix.</p>
 
@@ -36,33 +36,37 @@
 The choice of further progression is mapped thus:</p>
 
 <h3>Fig 1.</h3>
-<p><b>Scatter / Gather
-Gather / Repurpose
-Repurpose / Cartography
-Cartography / Scatter / Lacunae
-Lacunae / Miscera / Tatters
-Miscera / Tatters
+<p class = "pseudo"><b>Scatter / Gather<br>
+Gather / Repurpose<br>
+Repurpose / Cartography<br>
+Cartography / Scatter / Lacunae<br>
+Lacunae / Miscera / Tatters<br>
+Miscera / Tatters<br>
 Scatter / Gather / Tatters</b></p>
 
 <p>Each page offers the chance to move onto the next category or stay within the same space.  The first term in the above series is always the category of the currently active page.  For example if the user clicks on the <b>Lacunae</b> link the choices on the next page will be <b>Lacunae / Miscera / Tatters</b>.  The exceptions are Tatters pages which will offer a return to the beginning. </p> 
 
-<h3>2.3 – Footsteps and exploratory development<h3>
+<h3>2.3 – Footsteps and exploratory development</h3>
 <p>Every time a visitor clicks on a link the data is saved in the browser’s “session storage”.  This is a session specific memory and will remain active and accessible while the tab is open.  If the visitor navigates away from the site and then returns in the same tab the memory will remain active.  The data is only erased if the tab is closed.  A future possibility would be to save this memory within the browser in a more a permanent way but for now we preferred the idea of clearing the chalkboard and returning to a fresh site every time.</p>
 <p>This data is saved in a few different ways:</p>
-<p>•	Page counting: the browser keeps track of the decisions (for example, four <b>Scatters</b>, two <b>Gathers</b> etc)
-•	Previous choice: the link last clicked which brought the visitor to the current page
-•	Previous page category: the category of the last page from which the visitor navigated.
-•	Melody writing: each category represents a degree of a “normalised” mode.  <b>Scatter</b> is degree 0, <b>Gather</b> is degree 1 and so on.  Each time a link is pressed a degree is added to an array in the session storage.  This can be used to map a melody to a specific mode which is chosen
-•	Mode choice: each link saves a specific mode to interpret this melody (see Section 3)
-•	Mode alteration: after all of the links have been chosen at least once the set of possible modes is changed from major scale modes to minor scale modes.
-•	Keystroke logging: in the <b>Repurpose</b> pages the browser listens and records any typed information into a single string to be used as “interference” in other typing-based pages and loadframes.
-•	Loop increment: pages that use the Lindenmayer system to write melodies (see Section 3) require a number of loops that dictate the length of the eventual “sentence”.  The <b>Cartography</b> link logs the amount time it has been chosen and this number becomes the loop number for writing an L-system syntax.
-•	Loadframe visuals:  While loading the page displays some nice material.  This material is an important “scene setting” device and frames the way in which the visitor might interpret the following page especially after having made a choice the effects of which are obscured.
-o	<b>Scatter</b> displays cartoons and zines
-o	<b>Gather</b> loads quotations from John Masefield’s poem Reynard the Fox or from various Anglo-Saxon poems
-o	<b>Cartography</b> loads full page Ordnance Survey Maps
-o	<b>Repurpose</b> loads explanatory/poetic images of site’s mechanics
-o	<b>Lacunae</b>, <b>Tatters</b> and <b>Miscera</b> make random choices from all of the above categories</p>
+<ul class = "lacList">
+<li>Page counting: the browser keeps track of the decisions (for example, four <b>Scatters</b>, two <b>Gathers</b> etc)</li>
+<li>Previous choice: the link last clicked which brought the visitor to the current page</li>
+<li>Previous page category: the category of the last page from which the visitor navigated.</li>
+<li>Melody writing: each category represents a degree of a “normalised” mode.  <b>Scatter</b> is degree 0, <b>Gather</b> is degree 1 and so on.  Each time a link is pressed a degree is added to an array in the session storage.  This can be used to map a melody to a specific mode which is chosen</li>
+<li>Mode choice: each link saves a specific mode to interpret this melody (see Section 3)</li>
+<li>Mode alteration: after all of the links have been chosen at least once the set of possible modes is changed from major</li> scale modes to minor scale modes.</li>
+<li>Keystroke logging: in the <b>Repurpose</b> pages the browser listens and records any typed information into a single string to be used as “interference” in other typing-based pages and loadframes.</li>
+<li>Loop increment: pages that use the Lindenmayer system to write melodies (see Section 3) require a number of loops that dictate the length of the eventual “sentence”.  The <b>Cartography</b> link logs the amount time it has been chosen and this number becomes the loop number for writing an L-system syntax.</li>
+<li>Loadframe visuals:  While loading the page displays some nice material.  This material is an important “scene setting” device and frames the way in which the visitor might interpret the following page especially after having made a choice the effects of which are obscured.</li>
+<ul class = "lacList">
+<li><b>Scatter</b> displays cartoons and zines</li>
+<li><b>Gather</b> loads quotations from John Masefield’s poem Reynard the Fox or from various Anglo-Saxon poems</li>
+<li><b>Cartography</b> loads full page Ordnance Survey Maps</li>
+<li><b>Repurpose</b> loads explanatory/poetic images of site’s mechanics</li>
+<li><b>Lacunae</b>, <b>Tatters</b> and <b>Miscera</b> make random choices from all of the above categories</li>
+</ul>
+</ul>
 <p>There also exist a few pages which directly ask the user to intervene in the footstep process and will be analysed in <b>Section 2.3.2</b></p>
 <p>The result of this data saving is that melodies develop over time and, after a certain cut off point, shift into the distinctive minor key modes.  Musical material is affected in a tangible yet oblique and mysterious fashion by the visitor’s choices.</p>
 <h4>2.3.1 – Hidden Data Collection </h4>
@@ -75,22 +79,26 @@ o	<b>Lacunae</b>, <b>Tatters</b> and <b>Miscera</b> make random choices from all
 <h3>2.4 - Musical Footsteps</h3>
 <p>To access pages with musical content the visitor must navigate from category to another.  Staying within one category only loads “template” pages, environments with visual material only.  This structuring encourages visitors to explore the visual terrain in a simple way or to recombine their interactive experiences with new musical material. </p>
 <p>Musical material is organised thus:</p>
-<p>•	<b>Scatter</b>: spoken word and singing samples
-•	<b>Gather:</b> Organum and counterpoint
-•	<b>Cartography</b>: L-system synths
-•	<b>Repurpose</b>: musical and sound samples
-•	<b>atters</b>: combinations of the above</p>
+<ul class = "lacList">
+<li><b>Scatter</b>: spoken word and singing samples</li>
+<li><b>Gather:</b> Organum and counterpoint</li>
+<li><b>Cartography</b>: L-system synths</li>
+<li><b>Repurpose</b>: musical and sound samples</li>
+<li><b>atters</b>: combinations of the above</li>
+</ul>
 <p>See <b>Section 3</b> for more details.</p>
 <p>he sound engine is chosen by the category of the page from which the visitor has just navigated.  If the visitor moves from a <b>Scatter</b> page to a <b>Gather</b> page the environment template will be form the <b>Gather</b> series of pages and the sound will be spoken word/sung samples.  This mechanism is not “dynamic” by which we mean that the program does not possess the ability to randomly combine any page with any sound source.  To make the musical interaction interesting the process must be hard coded into the specific pages.  We have therefore sacrificed “true” combinatory potential but we find the music to be more interesting, better organised and all in all more satisfying for the visitor.  The page choices are therefore somewhat deterministic: there are a set of potential pre-combined pages that the browser can call on moving from <b>Scatter</b> to <b>Gather</b>.  This was done both for the reason just outlined but also for aesthetic reasons.  True combination displayed far too much duplication: the pages were very similar and worked in very linear ways.  Each determinate combination therefore is coded to an aesthetic sensibility specific to the “task” at hand.  This still allows a large amount of variation depending on the choices of the user and, crucially, prevents the exploration of each page from becoming repetitive or overly familiar.</p>
-<p><b>Tatters</b> combines pages and sound sources in ways that the normal navigation does not allow.  <b>Scatter<b> is usually only paired with <b>Gather</b> and <b>Repurpose</b> with <b>Cartography</b>.  <b>Tatters</b> opens these choices and pairs categories with thus far unfamiliar sound sources.</p>
+<p><b>Tatters</b> combines pages and sound sources in ways that the normal navigation does not allow.  <b>Scatter</b> is usually only paired with <b>Gather</b> and <b>Repurpose</b> with <b>Cartography</b>.  <b>Tatters</b> opens these choices and pairs categories with thus far unfamiliar sound sources.</p>
 
-<h2>3 - Music Machines<h2>
+<h2>3 - Music Machines</h2>
 <p>This section will examine each of the musical processes in turn.</p>
 <h3>3.1 - Scatter</h3>
 <p>This category deals with spoken word and singing samples which deal with the semantic/symbolic modes of music making.  The principle “objects” (a JavaScript term for coded containers that have “properties” (data concerning the object) and “methods” (actions the object can perform)) are:</p>
-<p>•	fracture.js
-•	samplerBands.js
-•	songer.js</p>
+<ul class = "lacList">
+<li>fracture.js</li>
+<li>samplerBands.js</li>
+<li>songer.js</li>
+</ul>
 <p>These are also held in common with <b>Repurpose</b> pages and can be found in the “objects” folder of the site directory.</p>
 <p>The object fracture is the main sound source.  This object loads sound files depending on its input arguments “type” and “cat” (category).  This allows the page to load either spoken word, sung, musical or sound recordings.  In “fracture” mode this object generates a sequence of data for playing the sound file such as “cue time”, “playback rate”, “pan”, “filter frequency”, “delay time” and so on.  When played in sequence the effect is a cutup “buffer” effect sequencer which plays repeat sample points of a file with filter, pan, and delay values for each trigger.  This effect is a JS implementation of the Glitchmachines plugin “Fracture” which does something similar.</p>
 <p>In “sample” mode fracture simply plays a file at a designated start point also with options for pan and filter effects.  <b>Scatter</b> environments play with both of these modes for structural progression (see “case study 1”)</p>
@@ -106,16 +114,20 @@ o	<b>Lacunae</b>, <b>Tatters</b> and <b>Miscera</b> make random choices from all
 
 <h3>3.2 - Gather</h3>
 <p>These pages generate organum-like melodic phrases.  The two principle engines are </p>
-<p>•	organum.js
-•	parallelOrganum.js
-•	melody.js
-•	orgChord.js</p>
+<ul class = "lacList">
+<li>organum.js</li>
+<li>parallelOrganum.js</li>
+<li>melody.js</li>
+<li>orgChord.js</li>
+</ul>
 <p>All of these pages access the stored melody from session storage on load.  The melodies are then mapped to a specific mode determined by the previous page.  </p>
 <p>Organum plays a cantus firmus that is harmonised by melodies randomly generated from the session melody.  Blank spaces are inserted into the melodies to make them more rhythmic and user interaction can rewrite, extend, reverse and change the octave of these sequences.  There is also the option to trigger each note individually or play the sequence at a certain bpm.  Parameters for synthesis are chose at random on page load.  As the user progresses through the pages the melody increases in length.  There is also the “alt cantus” which plays single note of the cantus firmus in a rhythm decided on load: this sequencer requires prompting before the next note is played.</p>
 <p>Parallel organum works in a similar fashion to the above but harmonises the melodies in parallel fifths above and below the cantus firmus</p>
-<p>Melody simply plays the collected cantus firmus in a spatially distinct way</p>
-<p>OrgChords plays a chord sequence based on the collected melody</p>
-<p>The latter two objects are designed as structural foils to the either of the main music sources.</p>
+<ul class = "lacList">
+<li>Melody simply plays the collected cantus firmus in a spatially distinct way</li>
+<li>OrgChords plays a chord sequence based on the collected melody</li>
+<li>The latter two objects are designed as structural foils to the either of the main music sources.</li>
+</ul>
 
 </p><u>Case Study 2: starsMoveOrganum.js</u></p>
 <p>At page load the browser initialises the organum object and feeds it randomly selected bpm and octave information.  Organum then reads the melody stored in session and maps it to the mode also stored from navigation.  Finally the floral() method is called which harmonises the cantus firmus in two voices.  The length of the melody depends on the amount of the visitor has spent in the website but within the <b>Gather</b> pages is a page that allows the visitor to draw their own additions to the melody, presented in a pseudo-neumatic notation.  See “starsMoveOrganum” video in the “videos folder”</p>
@@ -133,9 +145,11 @@ o	<b>Lacunae</b>, <b>Tatters</b> and <b>Miscera</b> make random choices from all
 
 <h3>3.4 - Cartography</h3>
 <p>In this section the sound sources are controlled by a Lindenmayer system.  This system stars with an “axiom” and a set of rules.  The program iterates over each element of the axiom and decides on an action based on the value of that element.  In this case symbols are used to decide whether to ascend or descend a semitone, tone, perfect fourth, perfect fifth, major or minor third.  The initial axiom can be altered to send the subsequent “sentence” down a different route.  The length (or “loops”) of the program are incremented each time the visitor selects a cartography page.  The rules are static meaning the melodies will bear a family resemblance to each other.  The main instruments are:</p>
-<p>•	lindenStrings.js - a “string trio”
-•	lindenSampler.js – plays a three string samples 
-•	lindenAphex.js – an Aphex Twin inspired stereo sequencer</p>
+<ul class = "lacList">
+<li>lindenStrings.js - a “string trio”</li>
+<li>lindenSampler.js – plays a three string samples </li>
+<li>lindenAphex.js – an Aphex Twin inspired stereo sequencer</li>
+</ul>
 <p>In each of the above cases the note values (or playback rate) is controlled by the L-system sentence.  Sequence progression can be controlled by “internal” sequencers that are triggered, shortened/lengthened, sped up or slowed down by visitor interaction.  The exception is lindenAphex which is oriented more towards fast repetitions of one value which needs to be progressed by calling a method. </p>
 <p>These instruments are joined by boards.js which makes a Boards of Canada-y style beat with processed drums and delay.  This is not strictly an L-system but uses a set of very simple binary rhythms (for example [1,0,1,0,] where 1 represents a trigger) that are added to in conjunction with additions to the L-system playbacks.</p>
 <p><u>Case Study 4: textHighlightStrings.js</u></p>

@@ -37,10 +37,7 @@ function setup(){
 	look.position(marginL,marginT)
 	look.size(textWidth,textHeight)
 
-	let gathLink = selectAll(".miscLink")
-	gathLink.mousePressed(linker)
-	gathLink.mouseOver(citOn)
-	gathLink.mouseOut(citOff)
+	linkSearch()
 
 	gathHov = createDiv("")
 	gathHov.class("hovLink")
@@ -48,9 +45,19 @@ function setup(){
 	look.child(gathHov)
 };
 
+function linkSearch(){
+	let link = selectAll(".miscLink")
+	for(i=0;i<link.length;i++){
+		link[i].mousePressed(linker)
+		link[i].mouseOver(citOn)
+		link[i].mouseOut(citOff)
+	}
+}
+
 function linker(){
 	if(this.id() === "scatTag"){
 		let newChoice = textChoice.miscChoice(1)
+		print(newChoice)
 		let newT = loadStrings(newChoice,texter)		
 	}if(this.id() === "gathTag"){
 		let newChoice = textChoice.miscChoice(2)
@@ -74,19 +81,23 @@ function linker(){
 }
 
 function draw(){
-	gathHov.position(mouseX+100,mouseY-100)
+	gathHov.position(mouseX+75,mouseY-100)
 }
 
 function texter(result){
 	let newText = join(result,"\n")
 	look.html(newText)
+	linkSearch()
+	$('html, body').animate({ scrollTop: 0 }, 400);
 }
 
 function citOn(){
+	print(this.id())
 	if(this.id() === "scatTag"){
 		gathHov.style("opacity", "100%")
 		gathHov.html("Narrative and Irony")
 	}if(this.id() === "gathTag"){
+		print("yay")
 		gathHov.style("opacity", "100%")
 		gathHov.html("The Body and Discursive Subjectivity")
 	}if(this.id() === "purpTag"){

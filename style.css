@@ -89,29 +89,6 @@
   font-size: 20px;
  }
 
-.miscText
-{
-  text-align: left;
-  font-family: "centaur";
-  line-height: 1.5;
-  font-size: 20px;
-}
-
-.pseudo
-{
-  text-align: left;
-  font-family: "centaur";
-  line-height: 1.5;
-  font-size: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.miscLink
-{
-  text-decoration:underline dashed black;
-}
-
 .hovLink
 {
   text-align: center;
@@ -387,6 +364,50 @@
 [class = "info"]:hover{
   width: 25%;
   opacity: 100%;
+}
+
+.miscText
+{
+  text-align: left;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+.pseudo
+{
+  text-align: left;
+  font-family: "centaur";
+  line-height: 1.5;
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.miscLink
+{
+  text-decoration:underline dashed black;
+}
+
+.appLink {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+
+.miscTitle {
+  text-align: center;
+}
+
+.quote{
+  text-align: center;
+ padding-left: 50px;
+  padding-right: 50px;
+}
+
+.gitLink{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: black;
 }
 
 @keyframes animatetop {
