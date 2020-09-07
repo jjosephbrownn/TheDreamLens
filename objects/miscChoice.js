@@ -1,6 +1,12 @@
 let misc = [
-	"/commentary/intro.txt",
-	"/commentary/gather.txt"
+	"/commentary/introFinal.txt",
+	"/commentary/scatter.txt",
+	"/commentary/gather.txt",
+	"/commentary/repurpose.txt",
+	"/commentary/cartography.txt",
+	"/commentary/tatters.txt",
+	"/commentary/lacunae.txt",
+	"/commentary/miscera.txt"
 ]
 
 function commentary(){

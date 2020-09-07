@@ -37,21 +37,38 @@ function setup(){
 	look.position(marginL,marginT)
 	look.size(textWidth,textHeight)
 
-	let gathLink = select(".miscLink")
+	let gathLink = selectAll(".miscLink")
 	gathLink.mousePressed(linker)
 	gathLink.mouseOver(citOn)
 	gathLink.mouseOut(citOff)
 
-	gathHov = createDiv("The Body and Discursive Subjectivity")
+	gathHov = createDiv("")
 	gathHov.class("hovLink")
 	gathHov.id("gathHov")
 	look.child(gathHov)
 };
 
 function linker(){
-	print("yay")
-	if(this.id() === "gathTag"){
+	if(this.id() === "scatTag"){
 		let newChoice = textChoice.miscChoice(1)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "gathTag"){
+		let newChoice = textChoice.miscChoice(2)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "purpTag"){
+		let newChoice = textChoice.miscChoice(3)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "cartTag"){
+		let newChoice = textChoice.miscChoice(4)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "miscTag"){
+		let newChoice = textChoice.miscChoice(7)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "lacTag"){
+		let newChoice = textChoice.miscChoice(6)
+		let newT = loadStrings(newChoice,texter)		
+	}if(this.id() === "tatTag"){
+		let newChoice = textChoice.miscChoice(5)
 		let newT = loadStrings(newChoice,texter)		
 	}
 }
@@ -66,13 +83,44 @@ function texter(result){
 }
 
 function citOn(){
-	if(this.id() === "gathTag"){
+	if(this.id() === "scatTag"){
 		gathHov.style("opacity", "100%")
+		gathHov.html("Narrative and Irony")
+	}if(this.id() === "gathTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("The Body and Discursive Subjectivity")
+	}if(this.id() === "purpTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("Nature and Technology")
+	}if(this.id() === "cartTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("Multiplicity and Musical Organisation")
+	}if(this.id() === "tatTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("Future Connection")
+	}if(this.id() === "lacTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("Appendices")
+	}if(this.id() === "miscTag"){
+		gathHov.style("opacity", "100%")
+		gathHov.html("Bibliography")
 	}
 }
 
 function citOff(){
-	if(this.id() === "gathTag"){
+	if(this.id() === "scatTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "gathTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "purpTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "cartTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "tatTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "lacTag"){
+		gathHov.style("opacity", "0%")
+	}if(this.id() === "miscTag"){
 		gathHov.style("opacity", "0%")
 	}
 }
