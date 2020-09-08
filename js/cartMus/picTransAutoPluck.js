@@ -63,7 +63,7 @@ let newScat = [
     "/pages/repurpose/textOnly.html",
     "/pages/repurpose/textTypingSarcasm.html",
     "/pages/repurpose/textRewrite.html", 
-    "/pages/repurpose/picTransAuto",
+    "/pages/repurpose/picTransClick.html",
     "/pages/cartography/addSites.html",
     "/pages/cartography/addLinden.html",
     "/pages/cartography/stars3DName.html",

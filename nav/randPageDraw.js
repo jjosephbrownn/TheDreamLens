@@ -19,7 +19,7 @@ let repurpose = [
     "/pages/repurpose/textOnly.html",
     "/pages/repurpose/textTypingSarcasm.html",
     "/pages/repurpose/textRewrite.html", 
-    "/pages/repurpose/picTransAuto"
+    "/pages/repurpose/picTransClick.html"
 ];
 
 let cartography = [
@@ -75,6 +75,7 @@ let tatters = [ //recombinati	"tatters/mapWordSongList.html",//TODO (mapwordsong
     "/pages/tatters/stars3DOrganumFrac.html", //samples/voices and organum CARTGATH
     "/pages/tatters/perlinDronePluck.html", //cart from gath (dron) CARTGATH
     "/pages/tatters/textHighlightParallelFrac.html", //with frac sungs voclas CARTHGATH
+    "/pages/tatters/mapWordSongList.html",
     "/pages/tatters/starsMovePluckFrac.html"
 ]
 
