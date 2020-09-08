@@ -40,12 +40,26 @@ let rand
 let pos = 0
 
 let newScat = [
-	"/pages/scatter/radio.html",
+    "/pages/scatter/addOrg.html",
+    "/pages/scatter/radio.html",
     "/pages/scatter/textOnly.html",
     "/pages/scatter/textScroll.html",
-    "/pages/scatter/addOrg.html",
-    "/pages/scatter/picHoles.html",  
-    "/pages/scatter/picTransAuto.html"
+    "/pages/scatter/picHoles.html",
+    "/pages/gather/perlinFlowColours.html",
+    "/pages/gather/starsDraw.html",
+    "/pages/gather/textOnly.html",
+    "/pages/gather/textHighlight.html",
+    "/pages/gather/textHoverMove.html",
+    "/pages/repurpose/starsMove.html",
+    "/pages/repurpose/textOnly.html",
+    "/pages/repurpose/textTypingSarcasm.html",
+    "/pages/repurpose/textRewrite.html", 
+    "/pages/repurpose/picTransAuto"
+    "/pages/cartography/addSites.html",
+    "/pages/cartography/addLinden.html",
+    "/pages/cartography/stars3DName.html",
+    "/pages/cartography/textOnly.html",
+    "/pages/cartography/mapWord.html",
  ];
 
 
