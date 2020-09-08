@@ -55,12 +55,12 @@ let newScat = [
     "/pages/repurpose/textOnly.html",
     "/pages/repurpose/textTypingSarcasm.html",
     "/pages/repurpose/textRewrite.html", 
-    "/pages/repurpose/picTransAuto"
+    "/pages/repurpose/picTransAuto",
     "/pages/cartography/addSites.html",
     "/pages/cartography/addLinden.html",
     "/pages/cartography/stars3DName.html",
     "/pages/cartography/textOnly.html",
-    "/pages/cartography/mapWord.html",
+    "/pages/cartography/mapWord.html"
  ];
 
 let loadImg
