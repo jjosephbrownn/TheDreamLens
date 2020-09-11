@@ -224,13 +224,11 @@
   font-size: 15px;
 }
 
-.hidden
-{
+[class = "hidden"]{
 	opacity: 0%;
 }
 
-
-.shown
+[class = "shown"]
 {
   width:500px;
 	opacity: 100%; 
