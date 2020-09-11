@@ -77,10 +77,10 @@ function setup() {
 
 	if(loadStep === "scatter"){
 		loadImg.resize(0,height)
-		image(loadImg,0 - (loadImg.width/2),0)
+		image(loadImg,0 - (loadImg.width/2),-height/2)
 	}else if(loadStep === "repurpose"){
 		loadImg.resize(0,height)
-		image(loadImg,0 - (loadImg.width/2),0)
+		image(loadImg,0 - (loadImg.width/2),-height/2)
 	}else if(loadStep === "cartography"){
 		loadImg.resize(width*1.5,0)
 		image(loadImg,random(-width/2,0),random(-height/2,0))
@@ -89,7 +89,7 @@ function setup() {
 		td.html(loadText)
 	} else {
 		loadImg.resize(0,height)
-		image(loadImg,0 - (loadImg.width/2),0)
+		image(loadImg,0 - (loadImg.width/2),-height/2)
 	}
 	
 	setTimeout(function(){
